@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
-
-
+using QuanLySinhVien.DAO;
 
 namespace QuanLySinhVien
 {
@@ -21,9 +19,13 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
         public static string ID_USER = "";
+        int loginAttemptFailedCount = 0;
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Bạn có muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void FLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -34,32 +36,33 @@ namespace QuanLySinhVien
             }
         }
 
-
-
         private void logicBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection cnn;
-            string connectionStrinng = @"Data Source=LAPTOP-G0K1DP8U\KHANHMINHSQL;Initial Catalog=QLSV_DataBase;Integrated Security=SSPI;";
-            cnn = new SqlConnection(connectionStrinng);
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Account_SV where Account = '" + UserNameTxt.Text + "'and Password = '" + PassTxt.Text + "'", cnn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt.Rows.Count > 0)
+            string username = UserNameTxt.Text;
+            string password = PassTxt.Text;
+            if (AccountDAO.Instance.isStudentAccount(username, password))
             {
-                MessageBox.Show("Đăng nhập thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
                 fView f = new fView();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else if (AccountDAO.Instance.isAdminAccount(username, password))
+            {
+                fAdmin f = new fAdmin();
+                this.Hide();
                 f.ShowDialog();
                 this.Show();
             }
             else
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+                MessageBox.Show("Đăng nhập không thành công. Hãy kiểm tra lại tên đăng nhập và mật khẩu");
+                loginAttemptFailedCount++;
+                if (loginAttemptFailedCount >= 3)
+                {
+                    Application.Exit();
+                }
             }
         }
-
-
-
-
     }   
 }

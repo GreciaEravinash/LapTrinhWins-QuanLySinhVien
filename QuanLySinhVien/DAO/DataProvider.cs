@@ -20,7 +20,7 @@ namespace QuanLySinhVien.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = @"Data Source=DESKTOP-7P5QA2G;Initial Catalog=QuanLyOnlineShop;Integrated Security=True";
+        private string connectionSTR = @"Data Source=DESKTOP-7P5QA2G;Initial Catalog=QuanLySinhVien;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

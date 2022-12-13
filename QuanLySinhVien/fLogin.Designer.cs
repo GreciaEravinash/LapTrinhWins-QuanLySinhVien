@@ -53,7 +53,7 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(85, 221);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 24);
+            this.label2.Size = new System.Drawing.Size(91, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mật khẩu:";
             // 
@@ -71,7 +71,7 @@
             // logicBtn
             // 
             this.logicBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logicBtn.Location = new System.Drawing.Point(137, 272);
+            this.logicBtn.Location = new System.Drawing.Point(67, 272);
             this.logicBtn.Name = "logicBtn";
             this.logicBtn.Size = new System.Drawing.Size(156, 49);
             this.logicBtn.TabIndex = 2;
@@ -81,7 +81,7 @@
             // exitBtn
             // 
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitBtn.Location = new System.Drawing.Point(329, 272);
+            this.exitBtn.Location = new System.Drawing.Point(394, 272);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(156, 49);
             this.exitBtn.TabIndex = 3;
@@ -95,7 +95,7 @@
             this.UserNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTxt.Location = new System.Drawing.Point(243, 149);
             this.UserNameTxt.Name = "UserNameTxt";
-            this.UserNameTxt.Size = new System.Drawing.Size(282, 34);
+            this.UserNameTxt.Size = new System.Drawing.Size(282, 28);
             this.UserNameTxt.TabIndex = 0;
             // 
             // PassTxt
@@ -104,7 +104,7 @@
             this.PassTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PassTxt.Location = new System.Drawing.Point(243, 215);
             this.PassTxt.Name = "PassTxt";
-            this.PassTxt.Size = new System.Drawing.Size(282, 34);
+            this.PassTxt.Size = new System.Drawing.Size(282, 28);
             this.PassTxt.TabIndex = 1;
             this.PassTxt.UseSystemPasswordChar = true;
             // 
@@ -113,7 +113,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(339, 333);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 16);
+            this.label4.Size = new System.Drawing.Size(233, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Phần mềm được xây dựng bởi nhóm NoWindow";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,7 +123,7 @@
             this.AcceptButton = this.logicBtn;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(570, 358);
+            this.ClientSize = new System.Drawing.Size(618, 358);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PassTxt);
             this.Controls.Add(this.UserNameTxt);
