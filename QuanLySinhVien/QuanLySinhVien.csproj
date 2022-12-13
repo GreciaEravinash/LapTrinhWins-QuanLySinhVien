@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\AccoutLogic.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="fAccount.cs">
       <SubType>Form</SubType>
     </Compile>
