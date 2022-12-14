@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLySinhVien.DAO;
 
 namespace QuanLySinhVien
 {
@@ -36,9 +37,25 @@ namespace QuanLySinhVien
             f.ShowDialog();
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemHelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void fView_Load(object sender, EventArgs e)
+        {
+            if (fLogin.isAdmin == false)
+            {
+                AddBtn.Visible = false;
+                DeleteBtn.Visible = false;
+                EditBtn.Visible = false;
+            }
+            StudentDAO.Instance.LoadStudentList(listviewStudent);
         }
     }
 }

@@ -18,14 +18,15 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+
+        public static string username;
+        public static bool isAdmin = false;
+
         public static string ID_USER = "";
-        int loginAttemptFailedCount = 0;
+
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
 
         private void FLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -42,6 +43,7 @@ namespace QuanLySinhVien
             string password = PassTxt.Text;
             if (AccountDAO.Instance.isValidAccount(username, password, '0'))
             {
+                isAdmin = false;
                 fView f = new fView();
                 this.Hide();
                 f.ShowDialog();
@@ -49,7 +51,8 @@ namespace QuanLySinhVien
             }
             else if (AccountDAO.Instance.isValidAccount(username, password, '1'))
             {
-                fAdmin f = new fAdmin();
+                isAdmin = true;
+                fView f = new fView();
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
@@ -57,11 +60,6 @@ namespace QuanLySinhVien
             else
             {
                 MessageBox.Show("Đăng nhập không thành công. Hãy kiểm tra lại tên đăng nhập và mật khẩu");
-                loginAttemptFailedCount++;
-                if (loginAttemptFailedCount >= 3)
-                {
-                    Application.Exit();
-                }
             }
         }
     }   

@@ -43,7 +43,7 @@
             this.v100ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinVềPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listviewStudent = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -157,14 +157,14 @@
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
-            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
             // ToolStripMenuItemHelp
             // 
             this.ToolStripMenuItemHelp.Name = "ToolStripMenuItemHelp";
             this.ToolStripMenuItemHelp.Size = new System.Drawing.Size(63, 24);
             this.ToolStripMenuItemHelp.Text = "Trợ giúp";
-            this.ToolStripMenuItemHelp.Click += new System.EventHandler(this.trợGiúpToolStripMenuItem_Click);
+            this.ToolStripMenuItemHelp.Click += new System.EventHandler(this.ToolStripMenuItemHelp_Click);
             // 
             // ToolStripMenuItemVersion
             // 
@@ -193,12 +193,12 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // listView1
+            // listviewStudent
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.listviewStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewStudent.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.listviewStudent.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
@@ -207,17 +207,17 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
-            this.listView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listView1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 101);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(921, 507);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listviewStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listviewStudent.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listviewStudent.FullRowSelect = true;
+            this.listviewStudent.GridLines = true;
+            this.listviewStudent.HideSelection = false;
+            this.listviewStudent.Location = new System.Drawing.Point(12, 101);
+            this.listviewStudent.Name = "listviewStudent";
+            this.listviewStudent.Size = new System.Drawing.Size(921, 507);
+            this.listviewStudent.TabIndex = 1;
+            this.listviewStudent.UseCompatibleStateImageBehavior = false;
+            this.listviewStudent.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -643,12 +643,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listviewStudent);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sinh viên Khoa CNTT";
+            this.Load += new System.EventHandler(this.fView_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -684,7 +685,7 @@
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button SreachBtn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listviewStudent;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
