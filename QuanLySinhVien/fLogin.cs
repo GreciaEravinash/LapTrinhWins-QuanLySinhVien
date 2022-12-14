@@ -22,7 +22,7 @@ namespace QuanLySinhVien
         public static string username;
         public static bool isAdmin = false;
 
-        public static string ID_USER = "";
+        public static string loginName = "";
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
@@ -44,6 +44,7 @@ namespace QuanLySinhVien
             if (AccountDAO.Instance.isValidAccount(username, password, '0'))
             {
                 isAdmin = false;
+                loginName = username;
                 fView f = new fView();
                 this.Hide();
                 f.ShowDialog();
@@ -52,6 +53,7 @@ namespace QuanLySinhVien
             else if (AccountDAO.Instance.isValidAccount(username, password, '1'))
             {
                 isAdmin = true;
+                loginName = username;
                 fView f = new fView();
                 this.Hide();
                 f.ShowDialog();

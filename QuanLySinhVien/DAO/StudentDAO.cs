@@ -45,41 +45,6 @@ namespace QuanLySinhVien.DAO
                 listView.Items.Add(item);
             }
         }
-
-        public bool editGoodsList(string newQuantity, string id)
-        {
-            string query = string.Format("update Goods set quantity = CAST({0} AS int) where id = {1}", newQuantity, id);
-
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-
-            return (result > 0);
-        }
-
-        public DataTable findGoods(string id)
-        {
-            string query = "Goods_SP_GoodsListFind @id";
-
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { id });
-
-            return data;
-        }
-
-        public DataTable findGoodsWithCategory(string id, string category)
-        {
-            string query = "Goods_SP_GoodsListFindWithCategory @id , @categoryname";
-
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { id, category });
-
-            return data;
-        }
-
-        public DataTable findGoodsCategoryOnly(string category)
-        {
-            string query = "Goods_SP_GoodsListCategoryOnly @categoryname";
-
-            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { category });
-
-            return data;
-        }
+        
     }
 }

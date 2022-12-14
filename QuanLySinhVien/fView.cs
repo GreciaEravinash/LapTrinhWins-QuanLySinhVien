@@ -17,7 +17,7 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
-
+        public int selectedRowIndex = 0;
         private void danhSáchTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
@@ -39,7 +39,7 @@ namespace QuanLySinhVien
 
         private void ToolStripMenuItemHelp_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +56,21 @@ namespace QuanLySinhVien
                 EditBtn.Visible = false;
             }
             StudentDAO.Instance.LoadStudentList(listviewStudent);
+            lblUsername.Text += " " + fLogin.loginName;
+        }
+
+        private void listviewStudent_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedRowIndex = listviewStudent.FocusedItem.Index;
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult deleteUserWarning = MessageBox.Show("Bạn có muốn xóa người dùng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            if (deleteUserWarning == DialogResult.Yes)
+            {
+                
+            }
         }
     }
 }
