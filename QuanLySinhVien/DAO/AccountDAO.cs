@@ -19,11 +19,11 @@ namespace QuanLySinhVien.DAO
 
         private AccountDAO() { }
 
-        public bool isStudentAccount(string username, string password)
+        public bool isValidAccount(string username, string password, char x)
         {
-            string query = "SP_Login_Student @username , @password , @type";
+            string query = "SP_Login @username , @password , @type";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password, 0 });
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password, x });
 
             return result.Rows.Count > 0;
         }

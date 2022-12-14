@@ -40,14 +40,14 @@ namespace QuanLySinhVien
         {
             string username = UserNameTxt.Text;
             string password = PassTxt.Text;
-            if (AccountDAO.Instance.isStudentAccount(username, password))
+            if (AccountDAO.Instance.isValidAccount(username, password, '0'))
             {
                 fView f = new fView();
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
             }
-            else if (AccountDAO.Instance.isAdminAccount(username, password))
+            else if (AccountDAO.Instance.isValidAccount(username, password, '1'))
             {
                 fAdmin f = new fAdmin();
                 this.Hide();
