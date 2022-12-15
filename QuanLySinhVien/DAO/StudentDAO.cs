@@ -34,17 +34,40 @@ namespace QuanLySinhVien.DAO
                 {
                     if (i == 2)
                     {
-                        string tmp = row[i].ToString().Substring(0, 8);
+                        string tmp = row[i].ToString();
+                        if (tmp.Length == 20)
+                        {
+                            tmp = tmp.Substring(0, 8);
+                        }
+                        else if (tmp.Length == 21)
+                        {
+                            tmp = tmp.Substring(0, 9);
+                        }
+                        else if (tmp.Length == 22)
+                        {
+                            tmp = tmp.Substring(0, 10);
+                        }
                         item.SubItems.Add(tmp);
                     }
                     else
                     {
                         item.SubItems.Add(row[i].ToString());
                     }
+                    //item.SubItems.Add(row[i].ToString());
                 }
                 listView.Items.Add(item);
             }
         }
-        
+        public void deleteStudent(string mssv)
+        {
+            string query = string.Format("delete from Student where mssv = {0}", mssv);
+
+            int data = DataProvider.Instance.ExecuteNonQuery(query);
+
+            if (data > 0)
+            {
+                MessageBox.Show("Xóa thông tin sinh viên thành công");
+            }
+        }
     }
 }
