@@ -332,12 +332,6 @@
             this.RateCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.RateCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RateCBX.FormattingEnabled = true;
-            this.RateCBX.Items.AddRange(new object[] {
-            "Giỏi",
-            "Kém",
-            "Khá",
-            "Trung bình",
-            "Yếu"});
             this.RateCBX.Location = new System.Drawing.Point(236, 241);
             this.RateCBX.Name = "RateCBX";
             this.RateCBX.Size = new System.Drawing.Size(132, 28);
@@ -572,15 +566,6 @@
             this.MajorCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.MajorCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MajorCBX.FormattingEnabled = true;
-            this.MajorCBX.Items.AddRange(new object[] {
-            "Al",
-            "Android Dev",
-            "Back-End",
-            "Computer Science",
-            "Data Scientist",
-            "Front-End",
-            "Full-Stack",
-            "Ios Dev"});
             this.MajorCBX.Location = new System.Drawing.Point(236, 173);
             this.MajorCBX.Name = "MajorCBX";
             this.MajorCBX.Size = new System.Drawing.Size(132, 28);
@@ -595,19 +580,6 @@
             this.ClassCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ClassCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClassCBX.FormattingEnabled = true;
-            this.ClassCBX.Items.AddRange(new object[] {
-            "45.CNTT.A",
-            "45.CNTT.B",
-            "45.CNTT.C",
-            "46.CNTT.A",
-            "46.CNTT.B",
-            "46.CNTT.C",
-            "47.CNTT.A",
-            "47.CNTT.B",
-            "47.CNTT.C",
-            "48.CNTT.A",
-            "48.CNTT.B",
-            "48.CNTT.C"});
             this.ClassCBX.Location = new System.Drawing.Point(236, 207);
             this.ClassCBX.Name = "ClassCBX";
             this.ClassCBX.Size = new System.Drawing.Size(132, 28);

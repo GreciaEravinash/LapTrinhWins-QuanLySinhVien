@@ -49,9 +49,27 @@ namespace QuanLySinhVien
                 AddBtn.Visible = false;
                 DeleteBtn.Visible = false;
                 EditBtn.Visible = false;
+                danhSáchTàiKhoảnToolStripMenuItem.Enabled = false;
+                
             }
             StudentDAO.Instance.LoadStudentList(listviewStudent);
             lblUsername.Text += " " + fLogin.loginName;
+
+            DataTable majorList = Major_Class_DAO.Instance.loadMajorList();
+
+            foreach (DataRow item in majorList.Rows)
+            {
+                MajorCBX.Items.Add(item[0].ToString());
+            }
+            majorList.Clear();
+
+            DataTable classList = Major_Class_DAO.Instance.loadClassList();
+
+            foreach (DataRow item in classList.Rows)
+            {
+                ClassCBX.Items.Add(item[0].ToString());
+            }
+            classList.Clear();
         }
 
         private void listviewStudent_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,8 +92,15 @@ namespace QuanLySinhVien
                 if (!string.IsNullOrWhiteSpace(Mssvtxt.Text))
                 {
                     StudentDAO.Instance.deleteStudent(Mssvtxt.Text);
+
+                    refreshStudentList();
                 }
             }
+        }
+        private void refreshStudentList()
+        {
+            listviewStudent.Items.Clear();
+            StudentDAO.Instance.LoadStudentList(listviewStudent);
         }
     }
 }

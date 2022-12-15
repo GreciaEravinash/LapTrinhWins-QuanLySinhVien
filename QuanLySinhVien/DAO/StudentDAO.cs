@@ -23,7 +23,7 @@ namespace QuanLySinhVien.DAO
         {
             //string query = "select mssv , studentname , CAST(birthday AS DATE) , hometown , gender , major , class , rank from Student";
 
-            string query = "SP_LoadStudentList";
+            string query = "select * from Student";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -60,9 +60,9 @@ namespace QuanLySinhVien.DAO
         }
         public void deleteStudent(string mssv)
         {
-            string query = string.Format("delete from Student where mssv = {0}", mssv);
+            string query = "delete from Student where mssv = @mssv";
 
-            int data = DataProvider.Instance.ExecuteNonQuery(query);
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] {mssv });
 
             if (data > 0)
             {
