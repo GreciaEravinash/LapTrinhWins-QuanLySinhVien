@@ -93,14 +93,21 @@ namespace QuanLySinhVien
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            DialogResult deleteUserWarning = MessageBox.Show("Bạn có muốn xóa người dùng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
-            if (deleteUserWarning == DialogResult.Yes)
+            if (listviewStudent.SelectedItems.Count <= 0)
             {
-                if (!string.IsNullOrWhiteSpace(Mssvtxt.Text))
+                MessageBox.Show("Vui lòng chọn sinh viên bạn muốn xóa");
+            }
+            else
+            {
+                DialogResult deleteUserWarning = MessageBox.Show("Bạn có muốn xóa người dùng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+                if (deleteUserWarning == DialogResult.Yes)
                 {
-                    StudentDAO.Instance.deleteStudent(Mssvtxt.Text);
+                    if (!string.IsNullOrWhiteSpace(Mssvtxt.Text))
+                    {
+                        StudentDAO.Instance.deleteStudent(Mssvtxt.Text);
 
-                    refreshStudentList();
+                        refreshStudentList();
+                    }
                 }
             }
         }
