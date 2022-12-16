@@ -45,5 +45,33 @@ namespace QuanLySinhVien
                 txbPassword.Text = listviewAccountList.FocusedItem.SubItems[4].Text.ToString();
             }
         }
+
+        private void DeleteAccBtn_Click(object sender, EventArgs e)
+        {
+            if (listviewAccountList.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("Vui lòng chọn tài khoản bạn muốn xóa");
+            }
+            else
+            {
+                DialogResult deleteUserWarning = MessageBox.Show("Bạn có muốn xóa tài khoản này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+                if (deleteUserWarning == DialogResult.Yes)
+                {
+                    if (!string.IsNullOrWhiteSpace(txbUsername.Text))
+                    {
+                        AccountDAO.Instance.deleteAccount(txbUsername.Text);
+
+                        refreshAccountList();
+                    }
+                }
+            }
+        }
+
+        private void refreshAccountList()
+        {
+            listviewAccountList.Items.Clear();
+
+            AccountDAO.Instance.loadAccountList(listviewAccountList);
+        }
     }
 }

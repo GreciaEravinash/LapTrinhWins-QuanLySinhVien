@@ -55,5 +55,16 @@ namespace QuanLySinhVien.DAO
                 accountList.Items.Add(item);
             }
         }
+        public void deleteAccount(string username)
+        {
+            string query = "delete from Account where username = @username";
+
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] {username });
+
+            if (data > 0)
+            {
+                MessageBox.Show("Xóa thông tin tài khoản thành công");
+            }
+        }
     }
 }

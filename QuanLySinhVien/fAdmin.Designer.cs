@@ -312,6 +312,7 @@
             this.DeleteAccBtn.TabIndex = 7;
             this.DeleteAccBtn.Text = "XÓA";
             this.DeleteAccBtn.UseVisualStyleBackColor = true;
+            this.DeleteAccBtn.Click += new System.EventHandler(this.DeleteAccBtn_Click);
             // 
             // FillterBtn
             // 
