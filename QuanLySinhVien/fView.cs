@@ -70,6 +70,13 @@ namespace QuanLySinhVien
                 ClassCBX.Items.Add(item[0].ToString());
             }
             classList.Clear();
+
+            DataTable rankList = Major_Class_DAO.Instance.loadRankList();
+
+            foreach (DataRow item in rankList.Rows)
+            {
+                RankCBX.Items.Add(item[0].ToString());
+            }
         }
 
         private void listviewStudent_SelectedIndexChanged(object sender, EventArgs e)

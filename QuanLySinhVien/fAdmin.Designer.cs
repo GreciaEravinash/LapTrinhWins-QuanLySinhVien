@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.listviewAccountList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,7 +50,7 @@
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.EditAccBtn = new System.Windows.Forms.Button();
             this.DeleteAccBtn = new System.Windows.Forms.Button();
             this.FillterBtn = new System.Windows.Forms.Button();
@@ -65,28 +65,29 @@
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView2
+            // listviewAccountList
             // 
-            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.listviewAccountList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listviewAccountList.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.listviewAccountList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader7,
             this.columnHeader4,
             this.columnHeader5});
-            this.listView2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listView2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.FullRowSelect = true;
-            this.listView2.GridLines = true;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(12, 113);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(675, 470);
-            this.listView2.TabIndex = 2;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listviewAccountList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listviewAccountList.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listviewAccountList.FullRowSelect = true;
+            this.listviewAccountList.GridLines = true;
+            this.listviewAccountList.HideSelection = false;
+            this.listviewAccountList.Location = new System.Drawing.Point(12, 113);
+            this.listviewAccountList.Name = "listviewAccountList";
+            this.listviewAccountList.Size = new System.Drawing.Size(675, 470);
+            this.listviewAccountList.TabIndex = 2;
+            this.listviewAccountList.UseCompatibleStateImageBehavior = false;
+            this.listviewAccountList.View = System.Windows.Forms.View.Details;
+            this.listviewAccountList.SelectedIndexChanged += new System.EventHandler(this.listviewAccountList_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -130,7 +131,7 @@
             // 
             this.txbMssv.Cursor = System.Windows.Forms.Cursors.Default;
             this.txbMssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbMssv.Location = new System.Drawing.Point(186, 5);
+            this.txbMssv.Location = new System.Drawing.Point(186, 6);
             this.txbMssv.Name = "txbMssv";
             this.txbMssv.ReadOnly = true;
             this.txbMssv.Size = new System.Drawing.Size(255, 28);
@@ -159,7 +160,7 @@
             // 
             this.txbName.Cursor = System.Windows.Forms.Cursors.Default;
             this.txbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbName.Location = new System.Drawing.Point(186, 7);
+            this.txbName.Location = new System.Drawing.Point(186, 8);
             this.txbName.Name = "txbName";
             this.txbName.ReadOnly = true;
             this.txbName.Size = new System.Drawing.Size(255, 28);
@@ -188,7 +189,7 @@
             // 
             this.txbClass.Cursor = System.Windows.Forms.Cursors.Default;
             this.txbClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbClass.Location = new System.Drawing.Point(185, 8);
+            this.txbClass.Location = new System.Drawing.Point(186, 9);
             this.txbClass.Name = "txbClass";
             this.txbClass.ReadOnly = true;
             this.txbClass.Size = new System.Drawing.Size(255, 28);
@@ -217,7 +218,7 @@
             // 
             this.txbUsername.Cursor = System.Windows.Forms.Cursors.Default;
             this.txbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbUsername.Location = new System.Drawing.Point(185, 6);
+            this.txbUsername.Location = new System.Drawing.Point(186, 7);
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.ReadOnly = true;
             this.txbUsername.Size = new System.Drawing.Size(255, 28);
@@ -246,7 +247,7 @@
             // 
             this.txbPassword.Cursor = System.Windows.Forms.Cursors.Default;
             this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassword.Location = new System.Drawing.Point(186, 5);
+            this.txbPassword.Location = new System.Drawing.Point(186, 6);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.ReadOnly = true;
             this.txbPassword.Size = new System.Drawing.Size(255, 28);
@@ -275,17 +276,17 @@
             this.label19.TabIndex = 26;
             this.label19.Text = "DANH SÁCH TÀI KHOẢN SINH VIÊN";
             // 
-            // label6
+            // lblUsername
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(699, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 17);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Tên truy cập:";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(699, 124);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(92, 17);
+            this.lblUsername.TabIndex = 28;
+            this.lblUsername.Text = "Tên truy cập:";
             // 
             // EditAccBtn
             // 
@@ -371,14 +372,14 @@
             this.ClientSize = new System.Drawing.Size(1178, 595);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.listView2);
+            this.Controls.Add(this.listviewAccountList);
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin tài khoản - mật khẩu Sinh viên";
@@ -401,7 +402,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView listviewAccountList;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader4;
@@ -423,7 +424,7 @@
         private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Button EditAccBtn;
         private System.Windows.Forms.Button DeleteAccBtn;
         private System.Windows.Forms.Button FillterBtn;

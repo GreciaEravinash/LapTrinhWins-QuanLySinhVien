@@ -4,6 +4,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using ListView = System.Windows.Forms.ListView;
 
 namespace QuanLySinhVien.DAO
 {
@@ -34,6 +37,23 @@ namespace QuanLySinhVien.DAO
             DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password, 1 });
 
             return result.Rows.Count > 0;
+        }
+
+        public void loadAccountList(ListView accountList)
+        {
+            string query = "select Account.mssv , studentname , class , username , password from Student inner join Account on Student.mssv = Account.mssv";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                ListViewItem item = new ListViewItem(row[0].ToString());
+                for (int i = 1; i < data.Columns.Count; i++)
+                {
+                    item.SubItems.Add(row[i].ToString());
+                }
+                accountList.Items.Add(item);
+            }
         }
     }
 }

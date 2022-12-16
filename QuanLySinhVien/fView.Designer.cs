@@ -57,7 +57,7 @@
             this.Birthdaytxt = new System.Windows.Forms.TextBox();
             this.Hometowntxt = new System.Windows.Forms.TextBox();
             this.Gendertxt = new System.Windows.Forms.TextBox();
-            this.RateCBX = new System.Windows.Forms.ComboBox();
+            this.RankCBX = new System.Windows.Forms.ComboBox();
             this.AddBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -273,9 +273,11 @@
             this.Mssvtxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Mssvtxt.BackColor = System.Drawing.SystemColors.Window;
+            this.Mssvtxt.Enabled = false;
             this.Mssvtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mssvtxt.Location = new System.Drawing.Point(181, 3);
             this.Mssvtxt.Name = "Mssvtxt";
+            this.Mssvtxt.ReadOnly = true;
             this.Mssvtxt.Size = new System.Drawing.Size(187, 28);
             this.Mssvtxt.TabIndex = 0;
             this.Mssvtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -324,19 +326,20 @@
             this.Gendertxt.TabIndex = 4;
             this.Gendertxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // RateCBX
+            // RankCBX
             // 
-            this.RateCBX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.RankCBX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RateCBX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.RateCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.RateCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RateCBX.FormattingEnabled = true;
-            this.RateCBX.Location = new System.Drawing.Point(236, 241);
-            this.RateCBX.Name = "RateCBX";
-            this.RateCBX.Size = new System.Drawing.Size(132, 28);
-            this.RateCBX.Sorted = true;
-            this.RateCBX.TabIndex = 8;
+            this.RankCBX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.RankCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.RankCBX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RankCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RankCBX.FormattingEnabled = true;
+            this.RankCBX.Location = new System.Drawing.Point(236, 241);
+            this.RankCBX.Name = "RankCBX";
+            this.RankCBX.Size = new System.Drawing.Size(132, 28);
+            this.RankCBX.Sorted = true;
+            this.RankCBX.TabIndex = 8;
             // 
             // AddBtn
             // 
@@ -550,7 +553,7 @@
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.RateCBX);
+            this.panel1.Controls.Add(this.RankCBX);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Location = new System.Drawing.Point(943, 124);
@@ -564,6 +567,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MajorCBX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.MajorCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.MajorCBX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.MajorCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MajorCBX.FormattingEnabled = true;
             this.MajorCBX.Location = new System.Drawing.Point(236, 173);
@@ -578,6 +582,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClassCBX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.ClassCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ClassCBX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ClassCBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClassCBX.FormattingEnabled = true;
             this.ClassCBX.Location = new System.Drawing.Point(236, 207);
@@ -647,7 +652,7 @@
         private System.Windows.Forms.TextBox Birthdaytxt;
         private System.Windows.Forms.TextBox Hometowntxt;
         private System.Windows.Forms.TextBox Gendertxt;
-        private System.Windows.Forms.ComboBox RateCBX;
+        private System.Windows.Forms.ComboBox RankCBX;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;

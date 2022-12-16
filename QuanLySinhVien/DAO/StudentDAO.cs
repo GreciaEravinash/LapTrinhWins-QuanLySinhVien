@@ -21,8 +21,6 @@ namespace QuanLySinhVien.DAO
 
         public void LoadStudentList(ListView listView)
         {
-            //string query = "select mssv , studentname , CAST(birthday AS DATE) , hometown , gender , major , class , rank from Student";
-
             string query = "select * from Student";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);

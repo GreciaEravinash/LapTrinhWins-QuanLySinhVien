@@ -33,5 +33,13 @@ namespace QuanLySinhVien.DAO
 
             return data;
         }
+        public DataTable loadRankList()
+        {
+            string query = "select * from Rank";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            return data;
+        }
     }
 }
