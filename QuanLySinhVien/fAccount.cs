@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLySinhVien.DAO;
 
 namespace QuanLySinhVien
 {
@@ -22,6 +23,9 @@ namespace QuanLySinhVien
             this.Close();
         }
 
-        
+        private void fAccount_Load(object sender, EventArgs e)
+        {
+            txbUsername.Text = fView.loginName;
+        }
     }
 }

@@ -19,7 +19,6 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
 
-        public static string username;
         public static bool isAdmin = false;
 
         public static string loginName = "";

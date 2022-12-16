@@ -18,6 +18,8 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
         public int selectedRowIndex = 0;
+
+        public static string loginName;
         private void danhSáchTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
@@ -52,6 +54,8 @@ namespace QuanLySinhVien
                 danhSáchTàiKhoảnToolStripMenuItem.Enabled = false;
                 
             }
+            loginName = fLogin.loginName;
+
             StudentDAO.Instance.LoadStudentList(listviewStudent);
             lblUsername.Text += " " + fLogin.loginName;
 

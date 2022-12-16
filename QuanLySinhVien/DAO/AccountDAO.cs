@@ -66,5 +66,10 @@ namespace QuanLySinhVien.DAO
                 MessageBox.Show("Xóa thông tin tài khoản thành công");
             }
         }
+
+        public void getAccountInfo(string )
+        {
+
+        }
     }
 }

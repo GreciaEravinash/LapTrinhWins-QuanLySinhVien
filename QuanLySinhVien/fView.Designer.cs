@@ -35,7 +35,7 @@
             this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpTừFileCóSẵnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemAccountInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tàiKhoảnCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AccountInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
@@ -131,19 +131,19 @@
             // ToolStripMenuItemAccountInfo
             // 
             this.ToolStripMenuItemAccountInfo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tàiKhoảnCáNhânToolStripMenuItem,
+            this.AccountInfoToolStripMenuItem,
             this.danhSáchTàiKhoảnToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.ToolStripMenuItemAccountInfo.Name = "ToolStripMenuItemAccountInfo";
             this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(123, 24);
             this.ToolStripMenuItemAccountInfo.Text = "Thông tin tài khoản";
             // 
-            // tàiKhoảnCáNhânToolStripMenuItem
+            // AccountInfoToolStripMenuItem
             // 
-            this.tàiKhoảnCáNhânToolStripMenuItem.Name = "tàiKhoảnCáNhânToolStripMenuItem";
-            this.tàiKhoảnCáNhânToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.tàiKhoảnCáNhânToolStripMenuItem.Text = "Tài khoản cá nhân";
-            this.tàiKhoảnCáNhânToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnCáNhânToolStripMenuItem_Click);
+            this.AccountInfoToolStripMenuItem.Name = "AccountInfoToolStripMenuItem";
+            this.AccountInfoToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.AccountInfoToolStripMenuItem.Text = "Thông tin tài khoản";
+            this.AccountInfoToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnCáNhânToolStripMenuItem_Click);
             // 
             // danhSáchTàiKhoảnToolStripMenuItem
             // 
@@ -685,7 +685,7 @@
         private System.Windows.Forms.ComboBox ClassCBX;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemHelp;
-        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnCáNhânToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AccountInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhSáchTàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.Label label8;
