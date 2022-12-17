@@ -41,7 +41,7 @@ namespace QuanLySinhVien.DAO
 
         public void loadAccountList(ListView accountList)
         {
-            string query = "select Account.mssv , studentname , class , username , password from Student inner join Account on Student.mssv = Account.mssv";
+            string query = "select Account.mssv , studentname , class , username , displayname from Student inner join Account on Student.mssv = Account.mssv";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -67,9 +67,24 @@ namespace QuanLySinhVien.DAO
             }
         }
 
-        public void getAccountInfo(string )
+        public DataTable getAccountInfo(string username)
         {
+            string query = "select displayname , password from Account where username = @username";
 
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { username });
+
+            return data;
+        }
+        public void updateAccountInfo(string username, string displayname, string password)
+        {
+            string query = "SP_UpdateAccount @username , @displayname , @password";
+
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, displayname, password });
+
+            if (data > 0)
+            {
+                MessageBox.Show("Cập nhật thông tin tài khoản thành công!");
+            }
         }
     }
 }

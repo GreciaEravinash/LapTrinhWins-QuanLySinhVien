@@ -33,7 +33,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMssv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.SreachAccBtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,7 +75,7 @@
             this.columnHeader2,
             this.columnHeader7,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader3});
             this.listviewAccountList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listviewAccountList.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listviewAccountList.FullRowSelect = true;
@@ -111,12 +111,6 @@
             this.columnHeader4.Text = "Tên tài khoản";
             this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader4.Width = 156;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Mật khẩu ";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 154;
             // 
             // panel1
             // 
@@ -259,9 +253,9 @@
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(16, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 19);
+            this.label5.Size = new System.Drawing.Size(113, 19);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Mật khẩu:";
+            this.label5.Text = "Tên hiển thị:";
             // 
             // label19
             // 
@@ -366,6 +360,11 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Tổng số sinh viên: ";
             // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tên hiển thị";
+            this.columnHeader3.Width = 147;
+            // 
             // fAdmin
             // 
             this.AcceptButton = this.EditAccBtn;
@@ -407,7 +406,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txbMssv;
@@ -432,5 +430,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button SreachAccBtn;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

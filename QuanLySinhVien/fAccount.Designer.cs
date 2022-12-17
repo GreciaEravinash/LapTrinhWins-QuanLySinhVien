@@ -33,10 +33,10 @@
             this.txbUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbDisplayname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbCurrentPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txbNewPassword = new System.Windows.Forms.TextBox();
@@ -61,6 +61,7 @@
             this.BtnUpdate.TabIndex = 4;
             this.BtnUpdate.Text = "Cập nhật";
             this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // panel1
             // 
@@ -74,6 +75,7 @@
             // txbUsername
             // 
             this.txbUsername.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txbUsername.Enabled = false;
             this.txbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsername.Location = new System.Drawing.Point(221, 18);
             this.txbUsername.Name = "txbUsername";
@@ -93,27 +95,27 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txbDisplayname);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 113);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(518, 70);
             this.panel2.TabIndex = 6;
             // 
-            // textBox1
+            // txbDisplayname
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(221, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 28);
-            this.textBox1.TabIndex = 0;
+            this.txbDisplayname.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txbDisplayname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDisplayname.Location = new System.Drawing.Point(221, 16);
+            this.txbDisplayname.Name = "txbDisplayname";
+            this.txbDisplayname.Size = new System.Drawing.Size(282, 28);
+            this.txbDisplayname.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 22);
+            this.label2.Location = new System.Drawing.Point(16, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 19);
             this.label2.TabIndex = 2;
@@ -121,31 +123,32 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txbCurrentPassword);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(12, 189);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(518, 70);
             this.panel3.TabIndex = 6;
             // 
-            // textBox2
+            // txbCurrentPassword
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(221, 16);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 28);
-            this.textBox2.TabIndex = 1;
+            this.txbCurrentPassword.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txbCurrentPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCurrentPassword.Location = new System.Drawing.Point(221, 16);
+            this.txbCurrentPassword.Name = "txbCurrentPassword";
+            this.txbCurrentPassword.Size = new System.Drawing.Size(282, 28);
+            this.txbCurrentPassword.TabIndex = 1;
+            this.txbCurrentPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 22);
+            this.label3.Location = new System.Drawing.Point(16, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 19);
+            this.label3.Size = new System.Drawing.Size(206, 19);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Mật khẩu hiện tại:";
+            this.label3.Text = "Nhập mật khẩu hiện tại:";
             // 
             // panel4
             // 
@@ -164,16 +167,17 @@
             this.txbNewPassword.Name = "txbNewPassword";
             this.txbNewPassword.Size = new System.Drawing.Size(282, 28);
             this.txbNewPassword.TabIndex = 2;
+            this.txbNewPassword.UseSystemPasswordChar = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 17);
+            this.label4.Location = new System.Drawing.Point(16, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 19);
+            this.label4.Size = new System.Drawing.Size(161, 19);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Mật khẩu mới:";
+            this.label4.Text = "Đặt mật khẩu mới:";
             // 
             // panel5
             // 
@@ -192,16 +196,17 @@
             this.txbReenterNewPassword.Name = "txbReenterNewPassword";
             this.txbReenterNewPassword.Size = new System.Drawing.Size(282, 28);
             this.txbReenterNewPassword.TabIndex = 3;
+            this.txbReenterNewPassword.UseSystemPasswordChar = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 22);
+            this.label5.Location = new System.Drawing.Point(16, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 19);
+            this.label5.Size = new System.Drawing.Size(199, 19);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Nhập lại mật khẩu:";
+            this.label5.Text = "Nhập lại mật khẩu mới:";
             // 
             // ExitBtn
             // 
@@ -254,10 +259,10 @@
         private System.Windows.Forms.TextBox txbUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbDisplayname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbCurrentPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txbNewPassword;
