@@ -73,7 +73,7 @@ namespace QuanLySinhVien
                         }
                         else
                         {
-                            AccountDAO.Instance.updateAccountInfo(txbUsername.Text, txbDisplayname.Text, txbNewPassword.Text);
+                            AccountDAO.Instance.updateAccountInfo(txbUsername.Text, txbNewPassword.Text);
 
                             loadCurrentAccountInfo();
                         }

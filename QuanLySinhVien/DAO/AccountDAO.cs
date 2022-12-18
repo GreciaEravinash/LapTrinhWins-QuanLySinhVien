@@ -75,11 +75,11 @@ namespace QuanLySinhVien.DAO
 
             return data;
         }
-        public void updateAccountInfo(string username, string displayname, string password)
+        public void updateAccountInfo(string username, string password)
         {
-            string query = "SP_UpdateAccount @username , @displayname , @password";
+            string query = "update Account set password = @password where username = @username";
 
-            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, displayname, password });
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { password, username });
 
             if (data > 0)
             {
