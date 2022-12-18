@@ -105,9 +105,11 @@
             // txbDisplayname
             // 
             this.txbDisplayname.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txbDisplayname.Enabled = false;
             this.txbDisplayname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDisplayname.Location = new System.Drawing.Point(221, 16);
             this.txbDisplayname.Name = "txbDisplayname";
+            this.txbDisplayname.ReadOnly = true;
             this.txbDisplayname.Size = new System.Drawing.Size(282, 28);
             this.txbDisplayname.TabIndex = 0;
             // 
