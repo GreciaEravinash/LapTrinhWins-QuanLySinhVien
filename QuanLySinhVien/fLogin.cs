@@ -48,6 +48,7 @@ namespace QuanLySinhVien
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
+                PassTxt.Clear();
             }
             else if (AccountDAO.Instance.isValidAccount(username, password, '1'))
             {
@@ -57,10 +58,12 @@ namespace QuanLySinhVien
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
+                PassTxt.Clear();
             }
             else
             {
                 MessageBox.Show("Đăng nhập không thành công. Hãy kiểm tra lại tên đăng nhập và mật khẩu");
+                PassTxt.Clear();
             }
         }
     }   

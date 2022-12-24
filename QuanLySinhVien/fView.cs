@@ -126,5 +126,10 @@ namespace QuanLySinhVien
             listviewStudent.Items.Clear();
             StudentDAO.Instance.LoadStudentList(listviewStudent);
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
