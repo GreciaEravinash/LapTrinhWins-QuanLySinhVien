@@ -96,6 +96,7 @@ namespace QuanLySinhVien
                 MajorCBX.SelectedIndex = MajorCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[5].Text.ToString());
                 ClassCBX.SelectedIndex = ClassCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[6].Text.ToString());
                 RankCBX.SelectedIndex = RankCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[7].Text.ToString());
+
             }
             
             
@@ -130,6 +131,20 @@ namespace QuanLySinhVien
         private void label19_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SreachBtn_Click(object sender, EventArgs e)
+        {
+            fSearch searchForm = new fSearch();
+            searchForm.ShowDialog();
+            if (searchForm.buttonClicked)
+            {
+                listviewStudent.Items.Clear();
+
+                StudentDAO.Instance.loadSpecificStudent(listviewStudent, searchForm.searchType, searchForm.searchValue);
+
+                searchForm.Close();
+            }
         }
     }
 }
