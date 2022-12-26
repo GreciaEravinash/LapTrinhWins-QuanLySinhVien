@@ -147,5 +147,17 @@ namespace QuanLySinhVien
                 searchForm.Close();
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn lưu thay đổi về thông tin của sinh viên này không", "Cảnh báo", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                StudentDAO.Instance.changeStudentInfo(Mssvtxt.Text, Birthdaytxt.Text, Hometowntxt.Text, Gendertxt.Text, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
+
+                refreshStudentList();
+            }
+        }
     }
 }

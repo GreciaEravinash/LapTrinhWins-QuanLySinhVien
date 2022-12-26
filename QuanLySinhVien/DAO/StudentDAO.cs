@@ -124,5 +124,22 @@ namespace QuanLySinhVien.DAO
                 listView.Items.Add(item);
             }
         }
+
+        public void changeStudentInfo(string mssv, string birthday, string hometown, string gender, string major, string studentclass, string rank)
+        {
+            string query = "update Student set birthday = CAST( @birthday as DATE) , hometown = @hometown , gender = @gender , major = @major , class = @class , rank = @rank where mssv = @mssv";
+
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { birthday, hometown, gender, major, studentclass, rank, mssv });
+
+            if (data > 0)
+            {
+                MessageBox.Show("Cập nhật thông tin sinh viên thành công");
+            }
+            else
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi cập nhật thông tin sinh viên");
+            }
+        }
+
     }
 }
