@@ -76,13 +76,13 @@ namespace QuanLySinhVien.DAO
 
             if (type == 1)
             {
-                query = "select * from Student where mssv = @mssv";
+                query = "select * from Student where mssv like '%' + @mssv + '%'";
 
                 data = DataProvider.Instance.ExecuteQuery(query, new object[] { searchValue });
             }
             else if (type == 2)
             {
-                query = "select * from Student where studentname = @name";
+                query = "select * from Student where studentname like '%' + @name + '%'";
 
                 data = DataProvider.Instance.ExecuteQuery(query, new object[] { searchValue });
             }

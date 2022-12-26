@@ -119,6 +119,7 @@
             this.Controls.Add(this.rdbtnSearchMSSV);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm thông tin sinh viên";
             this.Load += new System.EventHandler(this.fSearch_Load);
             this.ResumeLayout(false);

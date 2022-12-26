@@ -136,6 +136,7 @@ namespace QuanLySinhVien
         private void SreachBtn_Click(object sender, EventArgs e)
         {
             fSearch searchForm = new fSearch();
+
             searchForm.ShowDialog();
             if (searchForm.buttonClicked)
             {

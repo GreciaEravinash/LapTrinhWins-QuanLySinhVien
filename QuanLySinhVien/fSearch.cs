@@ -77,7 +77,9 @@ namespace QuanLySinhVien
                 searchType = 0;
             }
             buttonClicked = true;
-            this.Hide();
+
+            this.Close();
+
         }
     }
 }
