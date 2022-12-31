@@ -40,11 +40,11 @@
             // rdbtnSearchMSSV
             // 
             this.rdbtnSearchMSSV.AutoSize = true;
-            this.rdbtnSearchMSSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnSearchMSSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnSearchMSSV.Location = new System.Drawing.Point(45, 15);
             this.rdbtnSearchMSSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbtnSearchMSSV.Name = "rdbtnSearchMSSV";
-            this.rdbtnSearchMSSV.Size = new System.Drawing.Size(237, 29);
+            this.rdbtnSearchMSSV.Size = new System.Drawing.Size(216, 26);
             this.rdbtnSearchMSSV.TabIndex = 0;
             this.rdbtnSearchMSSV.TabStop = true;
             this.rdbtnSearchMSSV.Text = "Tìm kiếm theo MSSV";
@@ -54,11 +54,11 @@
             // rdbtnSearchName
             // 
             this.rdbtnSearchName.AutoSize = true;
-            this.rdbtnSearchName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnSearchName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnSearchName.Location = new System.Drawing.Point(45, 65);
             this.rdbtnSearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbtnSearchName.Name = "rdbtnSearchName";
-            this.rdbtnSearchName.Size = new System.Drawing.Size(204, 29);
+            this.rdbtnSearchName.Size = new System.Drawing.Size(190, 26);
             this.rdbtnSearchName.TabIndex = 1;
             this.rdbtnSearchName.TabStop = true;
             this.rdbtnSearchName.Text = "Tìm kiếm theo tên";
