@@ -133,5 +133,8 @@
   <ItemGroup>
     <None Include="Resources\fithcmue.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
