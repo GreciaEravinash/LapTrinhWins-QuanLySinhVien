@@ -70,7 +70,7 @@
             this.txbSearchMSSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbSearchMSSV.Enabled = false;
             this.txbSearchMSSV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearchMSSV.Location = new System.Drawing.Point(283, 15);
+            this.txbSearchMSSV.Location = new System.Drawing.Point(311, 15);
             this.txbSearchMSSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbSearchMSSV.Name = "txbSearchMSSV";
             this.txbSearchMSSV.Size = new System.Drawing.Size(290, 29);
@@ -81,7 +81,7 @@
             this.txbSearchName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbSearchName.Enabled = false;
             this.txbSearchName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearchName.Location = new System.Drawing.Point(283, 65);
+            this.txbSearchName.Location = new System.Drawing.Point(311, 65);
             this.txbSearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbSearchName.Name = "txbSearchName";
             this.txbSearchName.Size = new System.Drawing.Size(290, 29);
@@ -92,7 +92,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSearch.Location = new System.Drawing.Point(212, 118);
+            this.btnSearch.Location = new System.Drawing.Point(233, 118);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(168, 44);
@@ -105,7 +105,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(405, 118);
+            this.btnCancel.Location = new System.Drawing.Point(433, 118);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(168, 44);
@@ -119,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(638, 182);
+            this.ClientSize = new System.Drawing.Size(628, 184);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txbSearchName);

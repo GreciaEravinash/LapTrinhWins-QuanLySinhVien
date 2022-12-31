@@ -22,6 +22,9 @@ namespace QuanLySinhVien
         {
             lblUsername.Text += " " + fLogin.loginName;
             AccountDAO.Instance.loadAccountList(listviewAccountList);
+            txbMssv.ReadOnly = true;
+            txbName.ReadOnly = true;
+            txbClass.ReadOnly = true;
         }
 
         private void AcpHaxBtn_Click(object sender, EventArgs e)
@@ -78,5 +81,7 @@ namespace QuanLySinhVien
         {
             this.Close();
         }
+
+       
     }
 }

@@ -168,6 +168,7 @@
             // 
             this.listviewStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listviewStudent.AutoArrange = false;
             this.listviewStudent.BackColor = System.Drawing.Color.White;
             this.listviewStudent.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
@@ -508,11 +509,11 @@
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.Font = new System.Drawing.Font("Tahoma", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Tomato;
-            this.label19.Location = new System.Drawing.Point(378, 62);
+            this.label19.Location = new System.Drawing.Point(352, 59);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(695, 45);
+            this.label19.Size = new System.Drawing.Size(819, 45);
             this.label19.TabIndex = 25;
             this.label19.Text = "DANH SÁCH SINH VIÊN KHOA CNTT";
             this.label19.Click += new System.EventHandler(this.label19_Click);
@@ -549,6 +550,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 476);
             this.panel1.TabIndex = 26;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // MajorCBX
             // 
@@ -597,6 +599,7 @@
             this.lblUsername.Size = new System.Drawing.Size(107, 20);
             this.lblUsername.TabIndex = 27;
             this.lblUsername.Text = "Tên truy cập:";
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // label8
             // 
@@ -611,9 +614,12 @@
             this.label8.Size = new System.Drawing.Size(150, 20);
             this.label8.TabIndex = 32;
             this.label8.Text = "Tổng số sinh viên: ";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::QuanLySinhVien.Properties.Resources.fithcmue;
             this.pictureBox1.Location = new System.Drawing.Point(1233, 33);
             this.pictureBox1.Name = "pictureBox1";
@@ -640,6 +646,7 @@
             // fView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1370, 630);
             this.Controls.Add(this.pictureBox1);
