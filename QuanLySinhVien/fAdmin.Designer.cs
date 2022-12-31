@@ -62,6 +62,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.RefreshBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -308,7 +309,7 @@
             this.EditAccBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditAccBtn.Location = new System.Drawing.Point(24, 70);
             this.EditAccBtn.Name = "EditAccBtn";
-            this.EditAccBtn.Size = new System.Drawing.Size(153, 48);
+            this.EditAccBtn.Size = new System.Drawing.Size(128, 48);
             this.EditAccBtn.TabIndex = 6;
             this.EditAccBtn.Text = "CHỈNH SỬA";
             this.EditAccBtn.UseVisualStyleBackColor = false;
@@ -320,9 +321,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DeleteAccBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.DeleteAccBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteAccBtn.Location = new System.Drawing.Point(214, 9);
+            this.DeleteAccBtn.Location = new System.Drawing.Point(175, 9);
             this.DeleteAccBtn.Name = "DeleteAccBtn";
-            this.DeleteAccBtn.Size = new System.Drawing.Size(163, 48);
+            this.DeleteAccBtn.Size = new System.Drawing.Size(127, 48);
             this.DeleteAccBtn.TabIndex = 7;
             this.DeleteAccBtn.Text = "XÓA";
             this.DeleteAccBtn.UseVisualStyleBackColor = false;
@@ -336,7 +337,7 @@
             this.FillterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FillterBtn.Location = new System.Drawing.Point(24, 9);
             this.FillterBtn.Name = "FillterBtn";
-            this.FillterBtn.Size = new System.Drawing.Size(153, 48);
+            this.FillterBtn.Size = new System.Drawing.Size(128, 48);
             this.FillterBtn.TabIndex = 5;
             this.FillterBtn.Text = "LỌC";
             this.FillterBtn.UseVisualStyleBackColor = false;
@@ -347,6 +348,7 @@
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.AutoSize = true;
+            this.panel6.Controls.Add(this.RefreshBtn);
             this.panel6.Controls.Add(this.SreachAccBtn);
             this.panel6.Controls.Add(this.FillterBtn);
             this.panel6.Controls.Add(this.EditAccBtn);
@@ -363,9 +365,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SreachAccBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.SreachAccBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SreachAccBtn.Location = new System.Drawing.Point(214, 70);
+            this.SreachAccBtn.Location = new System.Drawing.Point(175, 70);
             this.SreachAccBtn.Name = "SreachAccBtn";
-            this.SreachAccBtn.Size = new System.Drawing.Size(162, 48);
+            this.SreachAccBtn.Size = new System.Drawing.Size(127, 48);
             this.SreachAccBtn.TabIndex = 8;
             this.SreachAccBtn.Text = "TÌM KIẾM";
             this.SreachAccBtn.UseVisualStyleBackColor = false;
@@ -417,6 +419,21 @@
             this.đăngXuấtToolStripMenuItem1.Name = "đăngXuấtToolStripMenuItem1";
             this.đăngXuấtToolStripMenuItem1.Size = new System.Drawing.Size(94, 24);
             this.đăngXuấtToolStripMenuItem1.Text = "Đăng xuất";
+            // 
+            // RefreshBtn
+            // 
+            this.RefreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RefreshBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.RefreshBtn.BackgroundImage = global::QuanLySinhVien.Properties.Resources.Refresh;
+            this.RefreshBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.RefreshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefreshBtn.ForeColor = System.Drawing.Color.Black;
+            this.RefreshBtn.Location = new System.Drawing.Point(318, 39);
+            this.RefreshBtn.Name = "RefreshBtn";
+            this.RefreshBtn.Size = new System.Drawing.Size(63, 52);
+            this.RefreshBtn.TabIndex = 36;
+            this.RefreshBtn.UseVisualStyleBackColor = false;
             // 
             // fAdmin
             // 
@@ -496,5 +513,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem1;
+        private System.Windows.Forms.Button RefreshBtn;
     }
 }
