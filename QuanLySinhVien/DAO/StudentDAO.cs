@@ -125,11 +125,11 @@ namespace QuanLySinhVien.DAO
             }
         }
 
-        public void changeStudentInfo(string mssv, string birthday, string hometown, string gender, string major, string studentclass, string rank)
+        public void changeStudentInfo(string name,string mssv, string birthday, string hometown, string gender, string major, string studentclass, string rank)
         {
-            string query = "update Student set birthday = CAST( @birthday as DATE) , hometown = @hometown , gender = @gender , major = @major , class = @class , rank = @rank where mssv = @mssv";
+            string query = "update Student set studentname = @studentname , birthday = CAST( @birthday as DATE) , hometown = @hometown , gender = @gender , major = @major , class = @class , rank = @rank where mssv = @mssv";
 
-            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { birthday, hometown, gender, major, studentclass, rank, mssv });
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] {name, birthday, hometown, gender, major, studentclass, rank, mssv });
 
             if (data > 0)
             {

@@ -50,7 +50,7 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Mssvtxt = new System.Windows.Forms.TextBox();
-            this.HoTentxt = new System.Windows.Forms.TextBox();
+            this.Nametxt = new System.Windows.Forms.TextBox();
             this.Birthdaytxt = new System.Windows.Forms.TextBox();
             this.Hometowntxt = new System.Windows.Forms.TextBox();
             this.Gendertxt = new System.Windows.Forms.TextBox();
@@ -187,7 +187,7 @@
             this.listviewStudent.Location = new System.Drawing.Point(8, 151);
             this.listviewStudent.MultiSelect = false;
             this.listviewStudent.Name = "listviewStudent";
-            this.listviewStudent.Size = new System.Drawing.Size(925, 477);
+            this.listviewStudent.Size = new System.Drawing.Size(941, 477);
             this.listviewStudent.TabIndex = 1;
             this.listviewStudent.UseCompatibleStateImageBehavior = false;
             this.listviewStudent.View = System.Windows.Forms.View.Details;
@@ -196,7 +196,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "MSSV";
-            this.columnHeader1.Width = 100;
+            this.columnHeader1.Width = 114;
             // 
             // columnHeader2
             // 
@@ -220,7 +220,7 @@
             // 
             this.columnHeader5.Text = "Giới tính";
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 100;
+            this.columnHeader5.Width = 90;
             // 
             // columnHeader6
             // 
@@ -232,7 +232,7 @@
             // 
             this.columnHeader7.Text = "Lớp";
             this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader7.Width = 80;
+            this.columnHeader7.Width = 91;
             // 
             // columnHeader8
             // 
@@ -254,17 +254,17 @@
             this.Mssvtxt.Size = new System.Drawing.Size(203, 32);
             this.Mssvtxt.TabIndex = 0;
             // 
-            // HoTentxt
+            // Nametxt
             // 
-            this.HoTentxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Nametxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.HoTentxt.BackColor = System.Drawing.SystemColors.Window;
-            this.HoTentxt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HoTentxt.ForeColor = System.Drawing.Color.Black;
-            this.HoTentxt.Location = new System.Drawing.Point(181, 52);
-            this.HoTentxt.Name = "HoTentxt";
-            this.HoTentxt.Size = new System.Drawing.Size(203, 32);
-            this.HoTentxt.TabIndex = 1;
+            this.Nametxt.BackColor = System.Drawing.SystemColors.Window;
+            this.Nametxt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nametxt.ForeColor = System.Drawing.Color.Black;
+            this.Nametxt.Location = new System.Drawing.Point(181, 52);
+            this.Nametxt.Name = "Nametxt";
+            this.Nametxt.Size = new System.Drawing.Size(203, 32);
+            this.Nametxt.TabIndex = 1;
             // 
             // Birthdaytxt
             // 
@@ -526,7 +526,7 @@
             this.panel1.Controls.Add(this.ClassCBX);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.Mssvtxt);
-            this.panel1.Controls.Add(this.HoTentxt);
+            this.panel1.Controls.Add(this.Nametxt);
             this.panel1.Controls.Add(this.Birthdaytxt);
             this.panel1.Controls.Add(this.SreachBtn);
             this.panel1.Controls.Add(this.AddBtn);
@@ -545,7 +545,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.panel1.Location = new System.Drawing.Point(943, 178);
+            this.panel1.Location = new System.Drawing.Point(955, 173);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 476);
             this.panel1.TabIndex = 26;
@@ -592,7 +592,7 @@
             this.lblUsername.BackColor = System.Drawing.SystemColors.Info;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUsername.Location = new System.Drawing.Point(939, 150);
+            this.lblUsername.Location = new System.Drawing.Point(951, 150);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(107, 20);
             this.lblUsername.TabIndex = 27;
@@ -673,7 +673,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemVersion;
         private System.Windows.Forms.ToolStripMenuItem v100ToolStripMenuItem;
         private System.Windows.Forms.TextBox Mssvtxt;
-        private System.Windows.Forms.TextBox HoTentxt;
+        private System.Windows.Forms.TextBox Nametxt;
         private System.Windows.Forms.TextBox Birthdaytxt;
         private System.Windows.Forms.TextBox Hometowntxt;
         private System.Windows.Forms.TextBox Gendertxt;

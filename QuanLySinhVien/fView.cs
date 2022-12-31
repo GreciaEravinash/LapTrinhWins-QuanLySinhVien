@@ -88,7 +88,7 @@ namespace QuanLySinhVien
             if (listviewStudent.SelectedItems.Count > 0)
             {
                 Mssvtxt.Text = listviewStudent.FocusedItem.SubItems[0].Text.ToString();
-                HoTentxt.Text = listviewStudent.FocusedItem.SubItems[1].Text.ToString();
+                Nametxt.Text = listviewStudent.FocusedItem.SubItems[1].Text.ToString();
                 Birthdaytxt.Text = listviewStudent.FocusedItem.SubItems[2].Text.ToString();
                 Hometowntxt.Text = listviewStudent.FocusedItem.SubItems[3].Text.ToString();
                 Gendertxt.Text = listviewStudent.FocusedItem.SubItems[4].Text.ToString();
@@ -154,7 +154,7 @@ namespace QuanLySinhVien
 
             if (result == DialogResult.Yes)
             {
-                StudentDAO.Instance.changeStudentInfo(Mssvtxt.Text, Birthdaytxt.Text, Hometowntxt.Text, Gendertxt.Text, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
+                StudentDAO.Instance.changeStudentInfo(Nametxt.Text,Mssvtxt.Text, Birthdaytxt.Text, Hometowntxt.Text, Gendertxt.Text, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
 
                 refreshStudentList();
             }

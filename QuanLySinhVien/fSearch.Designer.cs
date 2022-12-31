@@ -40,10 +40,11 @@
             // rdbtnSearchMSSV
             // 
             this.rdbtnSearchMSSV.AutoSize = true;
-            this.rdbtnSearchMSSV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnSearchMSSV.Location = new System.Drawing.Point(34, 12);
+            this.rdbtnSearchMSSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnSearchMSSV.Location = new System.Drawing.Point(45, 15);
+            this.rdbtnSearchMSSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbtnSearchMSSV.Name = "rdbtnSearchMSSV";
-            this.rdbtnSearchMSSV.Size = new System.Drawing.Size(155, 21);
+            this.rdbtnSearchMSSV.Size = new System.Drawing.Size(237, 29);
             this.rdbtnSearchMSSV.TabIndex = 0;
             this.rdbtnSearchMSSV.TabStop = true;
             this.rdbtnSearchMSSV.Text = "Tìm kiếm theo MSSV";
@@ -53,10 +54,11 @@
             // rdbtnSearchName
             // 
             this.rdbtnSearchName.AutoSize = true;
-            this.rdbtnSearchName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbtnSearchName.Location = new System.Drawing.Point(34, 53);
+            this.rdbtnSearchName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbtnSearchName.Location = new System.Drawing.Point(45, 65);
+            this.rdbtnSearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbtnSearchName.Name = "rdbtnSearchName";
-            this.rdbtnSearchName.Size = new System.Drawing.Size(140, 21);
+            this.rdbtnSearchName.Size = new System.Drawing.Size(204, 29);
             this.rdbtnSearchName.TabIndex = 1;
             this.rdbtnSearchName.TabStop = true;
             this.rdbtnSearchName.Text = "Tìm kiếm theo tên";
@@ -68,9 +70,10 @@
             this.txbSearchMSSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbSearchMSSV.Enabled = false;
             this.txbSearchMSSV.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearchMSSV.Location = new System.Drawing.Point(212, 12);
+            this.txbSearchMSSV.Location = new System.Drawing.Point(283, 15);
+            this.txbSearchMSSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbSearchMSSV.Name = "txbSearchMSSV";
-            this.txbSearchMSSV.Size = new System.Drawing.Size(218, 25);
+            this.txbSearchMSSV.Size = new System.Drawing.Size(290, 29);
             this.txbSearchMSSV.TabIndex = 2;
             // 
             // txbSearchName
@@ -78,39 +81,45 @@
             this.txbSearchName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbSearchName.Enabled = false;
             this.txbSearchName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearchName.Location = new System.Drawing.Point(212, 53);
+            this.txbSearchName.Location = new System.Drawing.Point(283, 65);
+            this.txbSearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbSearchName.Name = "txbSearchName";
-            this.txbSearchName.Size = new System.Drawing.Size(218, 25);
+            this.txbSearchName.Size = new System.Drawing.Size(290, 29);
             this.txbSearchName.TabIndex = 3;
             // 
             // btnSearch
             // 
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(63, 108);
+            this.btnSearch.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSearch.Location = new System.Drawing.Point(212, 118);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(126, 57);
+            this.btnSearch.Size = new System.Drawing.Size(168, 44);
             this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Text = "TÌM KIẾM";
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(282, 108);
+            this.btnCancel.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(405, 118);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(126, 57);
+            this.btnCancel.Size = new System.Drawing.Size(168, 44);
             this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Hủy";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Text = "HỦY";
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // fSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(481, 186);
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(638, 182);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txbSearchName);
@@ -118,6 +127,7 @@
             this.Controls.Add(this.rdbtnSearchName);
             this.Controls.Add(this.rdbtnSearchMSSV);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm thông tin sinh viên";
