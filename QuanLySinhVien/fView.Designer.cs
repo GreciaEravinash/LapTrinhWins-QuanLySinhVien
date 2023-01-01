@@ -70,12 +70,12 @@
             this.SortBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RefreshBtn = new System.Windows.Forms.Button();
             this.MajorCBX = new System.Windows.Forms.ComboBox();
             this.ClassCBX = new System.Windows.Forms.ComboBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RefreshBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,34 +106,34 @@
             this.danhSáchTàiKhoảnToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.ToolStripMenuItemAccountInfo.Name = "ToolStripMenuItemAccountInfo";
-            this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(157, 24);
+            this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(123, 24);
             this.ToolStripMenuItemAccountInfo.Text = "Thông tin tài khoản";
             // 
             // AccountInfoToolStripMenuItem
             // 
             this.AccountInfoToolStripMenuItem.Name = "AccountInfoToolStripMenuItem";
-            this.AccountInfoToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.AccountInfoToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.AccountInfoToolStripMenuItem.Text = "Thông tin tài khoản";
             this.AccountInfoToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnCáNhânToolStripMenuItem_Click);
             // 
             // danhSáchTàiKhoảnToolStripMenuItem
             // 
             this.danhSáchTàiKhoảnToolStripMenuItem.Name = "danhSáchTàiKhoảnToolStripMenuItem";
-            this.danhSáchTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.danhSáchTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.danhSáchTàiKhoảnToolStripMenuItem.Text = "Danh sách tài khoản";
             this.danhSáchTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.danhSáchTàiKhoảnToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
             // ToolStripMenuItemHelp
             // 
             this.ToolStripMenuItemHelp.Name = "ToolStripMenuItemHelp";
-            this.ToolStripMenuItemHelp.Size = new System.Drawing.Size(80, 24);
+            this.ToolStripMenuItemHelp.Size = new System.Drawing.Size(63, 24);
             this.ToolStripMenuItemHelp.Text = "Trợ giúp";
             this.ToolStripMenuItemHelp.Click += new System.EventHandler(this.ToolStripMenuItemHelp_Click);
             // 
@@ -143,19 +143,19 @@
             this.v100ToolStripMenuItem,
             this.thôngTinVềPhầnMềmToolStripMenuItem});
             this.ToolStripMenuItemVersion.Name = "ToolStripMenuItemVersion";
-            this.ToolStripMenuItemVersion.Size = new System.Drawing.Size(92, 24);
+            this.ToolStripMenuItemVersion.Size = new System.Drawing.Size(72, 24);
             this.ToolStripMenuItemVersion.Text = "Phiên bản";
             // 
             // v100ToolStripMenuItem
             // 
             this.v100ToolStripMenuItem.Name = "v100ToolStripMenuItem";
-            this.v100ToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.v100ToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.v100ToolStripMenuItem.Text = "v1.0.0";
             // 
             // thôngTinVềPhầnMềmToolStripMenuItem
             // 
             this.thôngTinVềPhầnMềmToolStripMenuItem.Name = "thôngTinVềPhầnMềmToolStripMenuItem";
-            this.thôngTinVềPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.thôngTinVềPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.thôngTinVềPhầnMềmToolStripMenuItem.Text = "Thông tin về phần mềm";
             // 
             // contextMenuStrip1
@@ -192,6 +192,7 @@
             this.listviewStudent.TabIndex = 1;
             this.listviewStudent.UseCompatibleStateImageBehavior = false;
             this.listviewStudent.View = System.Windows.Forms.View.Details;
+            this.listviewStudent.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listviewStudent_ColumnClick);
             this.listviewStudent.SelectedIndexChanged += new System.EventHandler(this.listviewStudent_SelectedIndexChanged);
             // 
             // columnHeader1
@@ -252,7 +253,7 @@
             this.Mssvtxt.Location = new System.Drawing.Point(181, 12);
             this.Mssvtxt.Name = "Mssvtxt";
             this.Mssvtxt.ReadOnly = true;
-            this.Mssvtxt.Size = new System.Drawing.Size(203, 32);
+            this.Mssvtxt.Size = new System.Drawing.Size(203, 27);
             this.Mssvtxt.TabIndex = 0;
             // 
             // Nametxt
@@ -264,7 +265,7 @@
             this.Nametxt.ForeColor = System.Drawing.Color.Black;
             this.Nametxt.Location = new System.Drawing.Point(181, 52);
             this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(203, 32);
+            this.Nametxt.Size = new System.Drawing.Size(203, 27);
             this.Nametxt.TabIndex = 1;
             // 
             // Birthdaytxt
@@ -276,7 +277,7 @@
             this.Birthdaytxt.ForeColor = System.Drawing.Color.Black;
             this.Birthdaytxt.Location = new System.Drawing.Point(181, 96);
             this.Birthdaytxt.Name = "Birthdaytxt";
-            this.Birthdaytxt.Size = new System.Drawing.Size(203, 32);
+            this.Birthdaytxt.Size = new System.Drawing.Size(203, 27);
             this.Birthdaytxt.TabIndex = 2;
             // 
             // Hometowntxt
@@ -288,7 +289,7 @@
             this.Hometowntxt.ForeColor = System.Drawing.Color.Black;
             this.Hometowntxt.Location = new System.Drawing.Point(181, 136);
             this.Hometowntxt.Name = "Hometowntxt";
-            this.Hometowntxt.Size = new System.Drawing.Size(203, 32);
+            this.Hometowntxt.Size = new System.Drawing.Size(203, 27);
             this.Hometowntxt.TabIndex = 3;
             // 
             // Gendertxt
@@ -300,7 +301,7 @@
             this.Gendertxt.ForeColor = System.Drawing.Color.Black;
             this.Gendertxt.Location = new System.Drawing.Point(181, 176);
             this.Gendertxt.Name = "Gendertxt";
-            this.Gendertxt.Size = new System.Drawing.Size(203, 32);
+            this.Gendertxt.Size = new System.Drawing.Size(203, 27);
             this.Gendertxt.TabIndex = 4;
             // 
             // RankCBX
@@ -316,7 +317,7 @@
             this.RankCBX.FormattingEnabled = true;
             this.RankCBX.Location = new System.Drawing.Point(236, 297);
             this.RankCBX.Name = "RankCBX";
-            this.RankCBX.Size = new System.Drawing.Size(148, 32);
+            this.RankCBX.Size = new System.Drawing.Size(148, 27);
             this.RankCBX.Sorted = true;
             this.RankCBX.TabIndex = 8;
             // 
@@ -389,7 +390,7 @@
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(35, 15);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 25);
+            this.label11.Size = new System.Drawing.Size(86, 20);
             this.label11.TabIndex = 13;
             this.label11.Text = "Mã số SV";
             // 
@@ -403,7 +404,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(35, 55);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(112, 25);
+            this.label12.Size = new System.Drawing.Size(90, 20);
             this.label12.TabIndex = 15;
             this.label12.Text = "Họ và Tên";
             // 
@@ -417,7 +418,7 @@
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(35, 99);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(108, 25);
+            this.label13.Size = new System.Drawing.Size(87, 20);
             this.label13.TabIndex = 16;
             this.label13.Text = "Ngày sinh";
             // 
@@ -431,7 +432,7 @@
             this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(35, 139);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 25);
+            this.label14.Size = new System.Drawing.Size(87, 20);
             this.label14.TabIndex = 17;
             this.label14.Text = "Quê quán";
             // 
@@ -445,7 +446,7 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(35, 179);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 25);
+            this.label15.Size = new System.Drawing.Size(76, 20);
             this.label15.TabIndex = 18;
             this.label15.Text = "Giới tính";
             // 
@@ -459,7 +460,7 @@
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(35, 219);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(156, 25);
+            this.label16.Size = new System.Drawing.Size(126, 20);
             this.label16.TabIndex = 19;
             this.label16.Text = "Chuyên Ngành";
             // 
@@ -473,7 +474,7 @@
             this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(39, 300);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(98, 25);
+            this.label17.Size = new System.Drawing.Size(81, 20);
             this.label17.TabIndex = 23;
             this.label17.Text = "Đánh giá";
             // 
@@ -487,7 +488,7 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(35, 259);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(48, 25);
+            this.label18.Size = new System.Drawing.Size(39, 20);
             this.label18.TabIndex = 24;
             this.label18.Text = "Lớp";
             // 
@@ -504,6 +505,7 @@
             this.SortBtn.TabIndex = 11;
             this.SortBtn.Text = "SẮP XẾP";
             this.SortBtn.UseVisualStyleBackColor = false;
+            this.SortBtn.Click += new System.EventHandler(this.SortBtn_Click);
             // 
             // label19
             // 
@@ -552,6 +554,21 @@
             this.panel1.TabIndex = 26;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // RefreshBtn
+            // 
+            this.RefreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RefreshBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.RefreshBtn.BackgroundImage = global::QuanLySinhVien.Properties.Resources.Refresh;
+            this.RefreshBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.RefreshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RefreshBtn.ForeColor = System.Drawing.Color.Black;
+            this.RefreshBtn.Location = new System.Drawing.Point(40, 340);
+            this.RefreshBtn.Name = "RefreshBtn";
+            this.RefreshBtn.Size = new System.Drawing.Size(63, 52);
+            this.RefreshBtn.TabIndex = 25;
+            this.RefreshBtn.UseVisualStyleBackColor = false;
+            // 
             // MajorCBX
             // 
             this.MajorCBX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -565,7 +582,7 @@
             this.MajorCBX.FormattingEnabled = true;
             this.MajorCBX.Location = new System.Drawing.Point(233, 216);
             this.MajorCBX.Name = "MajorCBX";
-            this.MajorCBX.Size = new System.Drawing.Size(151, 32);
+            this.MajorCBX.Size = new System.Drawing.Size(151, 27);
             this.MajorCBX.Sorted = true;
             this.MajorCBX.TabIndex = 5;
             // 
@@ -582,7 +599,7 @@
             this.ClassCBX.FormattingEnabled = true;
             this.ClassCBX.Location = new System.Drawing.Point(236, 256);
             this.ClassCBX.Name = "ClassCBX";
-            this.ClassCBX.Size = new System.Drawing.Size(148, 32);
+            this.ClassCBX.Size = new System.Drawing.Size(148, 27);
             this.ClassCBX.Sorted = true;
             this.ClassCBX.TabIndex = 7;
             // 
@@ -596,7 +613,7 @@
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
             this.lblUsername.Location = new System.Drawing.Point(951, 150);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(107, 20);
+            this.lblUsername.Size = new System.Drawing.Size(92, 17);
             this.lblUsername.TabIndex = 27;
             this.lblUsername.Text = "Tên truy cập:";
             this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
@@ -611,7 +628,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(8, 127);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 20);
+            this.label8.Size = new System.Drawing.Size(128, 17);
             this.label8.TabIndex = 32;
             this.label8.Text = "Tổng số sinh viên: ";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -627,21 +644,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
-            // 
-            // RefreshBtn
-            // 
-            this.RefreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RefreshBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.RefreshBtn.BackgroundImage = global::QuanLySinhVien.Properties.Resources.Refresh;
-            this.RefreshBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.RefreshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefreshBtn.ForeColor = System.Drawing.Color.Black;
-            this.RefreshBtn.Location = new System.Drawing.Point(40, 340);
-            this.RefreshBtn.Name = "RefreshBtn";
-            this.RefreshBtn.Size = new System.Drawing.Size(63, 52);
-            this.RefreshBtn.TabIndex = 25;
-            this.RefreshBtn.UseVisualStyleBackColor = false;
             // 
             // fView
             // 
