@@ -42,6 +42,8 @@ namespace QuanLySinhVien
                 }
 
                 StudentDAO.Instance.addNewStudent(txbMSSV.Text, txbStudentName.Text, DateTimePickerBirthday.Value.ToString("MM-dd-yyyy"), txbHometown.Text, gender, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
+
+                this.Close();
             }
         }
 
@@ -69,6 +71,11 @@ namespace QuanLySinhVien
             {
                 RankCBX.Items.Add(item[0].ToString());
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
