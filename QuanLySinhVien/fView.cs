@@ -233,6 +233,8 @@ namespace QuanLySinhVien
             this.Hide();
             form.ShowDialog();
             this.Show();
+
+            refreshStudentList();
         }
 
         private void RefreshBtn_Click(object sender, EventArgs e)
