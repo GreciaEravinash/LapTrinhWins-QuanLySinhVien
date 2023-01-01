@@ -334,6 +334,7 @@
             this.AddBtn.TabIndex = 9;
             this.AddBtn.Text = "THÊM SV";
             this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -568,6 +569,7 @@
             this.RefreshBtn.Size = new System.Drawing.Size(63, 52);
             this.RefreshBtn.TabIndex = 25;
             this.RefreshBtn.UseVisualStyleBackColor = false;
+            this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
             // 
             // MajorCBX
             // 

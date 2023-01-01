@@ -384,6 +384,7 @@
             this.SreachAccBtn.TabIndex = 8;
             this.SreachAccBtn.Text = "TÌM KIẾM";
             this.SreachAccBtn.UseVisualStyleBackColor = false;
+            this.SreachAccBtn.Click += new System.EventHandler(this.SreachAccBtn_Click);
             // 
             // label8
             // 

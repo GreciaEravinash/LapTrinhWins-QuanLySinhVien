@@ -128,6 +128,18 @@ namespace QuanLySinhVien
             StudentDAO.Instance.LoadStudentList(listviewStudent);
         }
 
+        private void clearInput()
+        {
+            Mssvtxt.Clear();
+            Nametxt.Clear();
+            Birthdaytxt.Clear();
+            Hometowntxt.Clear();
+            Gendertxt.Clear();
+            MajorCBX.SelectedIndex = -1;
+            ClassCBX.SelectedIndex = -1;
+            RankCBX.SelectedIndex = -1;
+        }
+
         private void label19_Click(object sender, EventArgs e)
         {
 
@@ -157,6 +169,8 @@ namespace QuanLySinhVien
                 StudentDAO.Instance.changeStudentInfo(Nametxt.Text,Mssvtxt.Text, Birthdaytxt.Text, Hometowntxt.Text, Gendertxt.Text, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
 
                 refreshStudentList();
+
+                clearInput();
             }
         }
 
@@ -206,6 +220,26 @@ namespace QuanLySinhVien
                 sorter.Order = SortOrder.Ascending;
             }
             listviewStudent.Sort();
+        }
+
+        //private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        //{
+        //    MessageBox.Show(dateTimePicker1.Value.ToString("MM-dd-yyyy"));
+        //}
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            fAddNewStudent form = new fAddNewStudent();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
+
+        private void RefreshBtn_Click(object sender, EventArgs e)
+        {
+            refreshStudentList();
+
+            clearInput();
         }
     }
 }

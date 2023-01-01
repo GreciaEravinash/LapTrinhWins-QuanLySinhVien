@@ -141,5 +141,31 @@ namespace QuanLySinhVien.DAO
             }
         }
 
+        public void addNewStudent(string mssv, string name, string birthday, string hometown, string gender, string major, string studentclass, string rank)
+        {
+            string checkExistedStudent = "select * from Student where mssv = @mssv";
+
+            DataTable tmp = DataProvider.Instance.ExecuteQuery(checkExistedStudent, new object[] { mssv });
+
+            if (tmp.Rows.Count > 0)
+            {
+                MessageBox.Show("Không thể thêm thông tin sinh viên do đã tồn tại một sinh viên với MSSV là " + mssv);
+            }
+            else
+            {
+                string query = "insert into Student values ( @mssv , @name , CAST( @birthday as DATE) , @hometown , @gender , @major , @studentclass , @rank )";
+
+                int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { mssv, name, birthday, hometown, gender, major, studentclass, rank });
+
+                if (data > 0)
+                {
+                    MessageBox.Show("Thêm thông tin sinh viên thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Đã xảy ra lỗi khi thêm thông tin sinh viên");
+                }
+            }
+        }
     }
 }

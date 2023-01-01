@@ -82,6 +82,9 @@ namespace QuanLySinhVien
             this.Close();
         }
 
-       
+        private void SreachAccBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
