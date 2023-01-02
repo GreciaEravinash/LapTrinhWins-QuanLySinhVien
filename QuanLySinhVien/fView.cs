@@ -23,7 +23,9 @@ namespace QuanLySinhVien
         private void danhSáchTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
+            this.Hide();
             f.ShowDialog();
+            this.Show();
         }
         
         private void tàiKhoảnCáNhânToolStripMenuItem_Click(object sender, EventArgs e)

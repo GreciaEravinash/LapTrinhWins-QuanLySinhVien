@@ -84,9 +84,20 @@ namespace QuanLySinhVien
 
         private void SreachAccBtn_Click(object sender, EventArgs e)
         {
+            fSearch searchForm = new fSearch();
 
+            searchForm.currentForm = "fAdmin";
+
+            searchForm.ShowDialog();
+            if (searchForm.buttonClicked)
+            {
+                listviewAccountList.Items.Clear();
+
+                AccountDAO.Instance.loadSpecificAccount(listviewAccountList, searchForm.searchType, searchForm.searchValue);
+
+                searchForm.Close();
+            }
         }
-
         private void RefreshBtn_Click(object sender, EventArgs e)
         {
             refreshAccountList();

@@ -86,5 +86,47 @@ namespace QuanLySinhVien.DAO
                 MessageBox.Show("Cập nhật thông tin tài khoản thành công!");
             }
         }
+
+        public void loadSpecificAccount(ListView listView, int type, string searchValue)
+        {
+            string query;
+
+            DataTable data = new DataTable();
+            //select * from Student where studentname like '%' + @name + '%'
+            if (type == 1)
+            {
+                query = "select Account.mssv , studentname , class , username , displayname from Student inner join Account on Student.mssv = Account.mssv where Student.mssv like '%' + @mssv + '%'";
+
+                data = DataProvider.Instance.ExecuteQuery(query, new object[] { searchValue });
+            }
+            else if (type == 2)
+            {
+                query = "select Account.mssv , studentname , class , username , displayname from Student inner join Account on Student.mssv = Account.mssv where username like '%' + @username + '%'";
+
+                data = DataProvider.Instance.ExecuteQuery(query, new object[] { searchValue });
+            }
+            else if (type == 3)
+            {
+                query = "select Account.mssv , studentname , class , username , displayname from Student inner join Account on Student.mssv = Account.mssv where displayname like '%' + @displayname + '%'";
+
+                data = DataProvider.Instance.ExecuteQuery(query, new object[] { searchValue });
+            }
+            else
+            {
+                query = "select Account.mssv , studentname , class , username , displayname from Student inner join Account on Student.mssv = Account.mssv";
+
+                data = DataProvider.Instance.ExecuteQuery(query);
+            }
+
+            foreach (DataRow row in data.Rows)
+            {
+                ListViewItem item = new ListViewItem(row[0].ToString());
+                for (int i = 1; i < data.Columns.Count; i++)
+                {
+                    item.SubItems.Add(row[i].ToString());
+                }
+                listView.Items.Add(item);
+            }
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+        public string currentForm = "";
 
         public int searchType; //0: blank search   1: search by MSSV   2: search by name
 
@@ -25,6 +26,16 @@ namespace QuanLySinhVien
 
         private void fSearch_Load(object sender, EventArgs e)
         {
+            if (currentForm == "fAdmin")
+            {
+                cmbxSearchType.Items.Clear();
+
+                cmbxSearchType.Items.Add("Tìm kiếm theo MSSV");
+
+                cmbxSearchType.Items.Add("Tìm kiếm theo tên tài khoản");
+
+                cmbxSearchType.Items.Add("Tìm kiếm theo tên hiển thị");
+            }
             cmbxSearchType.SelectedIndex = 0;
         }
 
@@ -35,17 +46,39 @@ namespace QuanLySinhVien
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (cmbxSearchType.SelectedIndex == 0 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
+            if (currentForm == "")
             {
-                searchType = 1;
-            }
-            else if (cmbxSearchType.SelectedIndex == 1 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
-            {
-                searchType = 2;
+                if (cmbxSearchType.SelectedIndex == 0 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
+                {
+                    searchType = 1;
+                }
+                else if (cmbxSearchType.SelectedIndex == 1 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
+                {
+                    searchType = 2;
+                }
+                else
+                {
+                    searchType = 0;
+                }
             }
             else
             {
-                searchType = 0;
+                if (cmbxSearchType.SelectedIndex == 0 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
+                {
+                    searchType = 1;
+                }
+                else if (cmbxSearchType.SelectedIndex == 1 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
+                {
+                    searchType = 2;
+                }
+                else if (cmbxSearchType.SelectedIndex == 2 && !string.IsNullOrWhiteSpace(txbSearchValue.Text))
+                {
+                    searchType = 3;
+                }
+                else
+                {
+                    searchType = 0;
+                }
             }
             buttonClicked = true;
             searchValue = txbSearchValue.Text;
