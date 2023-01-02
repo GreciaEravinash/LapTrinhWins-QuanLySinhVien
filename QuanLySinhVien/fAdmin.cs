@@ -27,11 +27,6 @@ namespace QuanLySinhVien
             txbClass.ReadOnly = true;
         }
 
-        private void AcpHaxBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void listviewAccountList_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listviewAccountList.SelectedItems.Count > 0)
@@ -150,6 +145,13 @@ namespace QuanLySinhVien
                 sorter.Order = SortOrder.Ascending;
             }
             listviewAccountList.Sort();
+        }
+
+        private void AddAccBtn_Click(object sender, EventArgs e)
+        {
+            fAddNewAccount f = new fAddNewAccount();
+            f.ShowDialog();
+
         }
     }
 }

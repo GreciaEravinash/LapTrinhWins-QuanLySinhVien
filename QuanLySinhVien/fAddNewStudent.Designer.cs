@@ -347,10 +347,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(578, 375);
+            this.button1.Location = new System.Drawing.Point(626, 375);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 55);
+            this.button1.Size = new System.Drawing.Size(159, 55);
             this.button1.TabIndex = 8;
             this.button1.Text = "THÊM ";
             this.button1.UseVisualStyleBackColor = false;
@@ -360,10 +360,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(802, 375);
+            this.button2.Location = new System.Drawing.Point(806, 375);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 55);
+            this.button2.Size = new System.Drawing.Size(159, 55);
             this.button2.TabIndex = 9;
             this.button2.Text = "HỦY";
             this.button2.UseVisualStyleBackColor = false;
