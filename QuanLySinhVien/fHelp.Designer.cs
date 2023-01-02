@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fHelp));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +46,16 @@
             this.panel1.Size = new System.Drawing.Size(1035, 640);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLySinhVien.Properties.Resources.fithcmue;
+            this.pictureBox1.Location = new System.Drawing.Point(845, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(187, 178);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -56,16 +66,6 @@
             this.label1.Size = new System.Drawing.Size(336, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "HƯỚNG DẪN SỬ DỤNG";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLySinhVien.Properties.Resources.fithcmue;
-            this.pictureBox1.Location = new System.Drawing.Point(845, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 178);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
             // 
             // fHelp
             // 
