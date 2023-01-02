@@ -45,7 +45,7 @@ namespace QuanLySinhVien
                 txbName.Text = listviewAccountList.FocusedItem.SubItems[1].Text.ToString();
                 txbClass.Text = listviewAccountList.FocusedItem.SubItems[2].Text.ToString();
                 txbUsername.Text = listviewAccountList.FocusedItem.SubItems[3].Text.ToString();
-                txbPassword.Text = listviewAccountList.FocusedItem.SubItems[4].Text.ToString();
+                txbDisplayName.Text = listviewAccountList.FocusedItem.SubItems[4].Text.ToString();
             }
         }
 
@@ -85,6 +85,17 @@ namespace QuanLySinhVien
         private void SreachAccBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void RefreshBtn_Click(object sender, EventArgs e)
+        {
+            refreshAccountList();
+
+            txbClass.Clear();
+            txbMssv.Clear();
+            txbName.Clear();
+            txbDisplayName.Clear();
+            txbUsername.Clear();
         }
     }
 }

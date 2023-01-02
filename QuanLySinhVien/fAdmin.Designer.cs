@@ -48,7 +48,7 @@
             this.txbUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txbPassword = new System.Windows.Forms.TextBox();
+            this.txbDisplayName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -143,7 +143,7 @@
             this.txbMssv.Location = new System.Drawing.Point(168, 5);
             this.txbMssv.Name = "txbMssv";
             this.txbMssv.ReadOnly = true;
-            this.txbMssv.Size = new System.Drawing.Size(271, 34);
+            this.txbMssv.Size = new System.Drawing.Size(271, 28);
             this.txbMssv.TabIndex = 0;
             // 
             // label1
@@ -152,7 +152,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 25);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã số SV";
             // 
@@ -173,7 +173,7 @@
             this.txbName.Location = new System.Drawing.Point(168, 7);
             this.txbName.Name = "txbName";
             this.txbName.ReadOnly = true;
-            this.txbName.Size = new System.Drawing.Size(271, 34);
+            this.txbName.Size = new System.Drawing.Size(271, 28);
             this.txbName.TabIndex = 1;
             // 
             // label2
@@ -182,7 +182,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Họ và tên";
             // 
@@ -203,7 +203,7 @@
             this.txbClass.Location = new System.Drawing.Point(168, 5);
             this.txbClass.Name = "txbClass";
             this.txbClass.ReadOnly = true;
-            this.txbClass.Size = new System.Drawing.Size(271, 34);
+            this.txbClass.Size = new System.Drawing.Size(271, 28);
             this.txbClass.TabIndex = 2;
             // 
             // label3
@@ -212,7 +212,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 25);
+            this.label3.Size = new System.Drawing.Size(39, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Lớp";
             // 
@@ -232,7 +232,7 @@
             this.txbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsername.Location = new System.Drawing.Point(168, 5);
             this.txbUsername.Name = "txbUsername";
-            this.txbUsername.Size = new System.Drawing.Size(271, 34);
+            this.txbUsername.Size = new System.Drawing.Size(271, 28);
             this.txbUsername.TabIndex = 3;
             // 
             // label4
@@ -241,28 +241,28 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 25);
+            this.label4.Size = new System.Drawing.Size(124, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Tên Tài Khoản";
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.txbPassword);
+            this.panel5.Controls.Add(this.txbDisplayName);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(723, 398);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(443, 45);
             this.panel5.TabIndex = 8;
             // 
-            // txbPassword
+            // txbDisplayName
             // 
-            this.txbPassword.BackColor = System.Drawing.SystemColors.Window;
-            this.txbPassword.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassword.Location = new System.Drawing.Point(168, 3);
-            this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(271, 34);
-            this.txbPassword.TabIndex = 4;
+            this.txbDisplayName.BackColor = System.Drawing.SystemColors.Window;
+            this.txbDisplayName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txbDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDisplayName.Location = new System.Drawing.Point(168, 3);
+            this.txbDisplayName.Name = "txbDisplayName";
+            this.txbDisplayName.Size = new System.Drawing.Size(271, 28);
+            this.txbDisplayName.TabIndex = 4;
             // 
             // label5
             // 
@@ -270,7 +270,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 25);
+            this.label5.Size = new System.Drawing.Size(103, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Tên hiển thị";
             // 
@@ -283,7 +283,7 @@
             this.label19.ForeColor = System.Drawing.Color.Tomato;
             this.label19.Location = new System.Drawing.Point(273, 50);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(681, 45);
+            this.label19.Size = new System.Drawing.Size(554, 36);
             this.label19.TabIndex = 26;
             this.label19.Text = "DANH SÁCH TÀI KHOẢN SINH VIÊN";
             // 
@@ -295,7 +295,7 @@
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(719, 163);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(107, 20);
+            this.lblUsername.Size = new System.Drawing.Size(92, 17);
             this.lblUsername.TabIndex = 28;
             this.lblUsername.Text = "Tên truy cập:";
             // 
@@ -371,6 +371,7 @@
             this.RefreshBtn.Size = new System.Drawing.Size(63, 52);
             this.RefreshBtn.TabIndex = 36;
             this.RefreshBtn.UseVisualStyleBackColor = false;
+            this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
             // 
             // SreachAccBtn
             // 
@@ -394,7 +395,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 101);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 20);
+            this.label8.Size = new System.Drawing.Size(128, 17);
             this.label8.TabIndex = 31;
             this.label8.Text = "Tổng số sinh viên: ";
             // 
@@ -417,21 +418,21 @@
             this.đăngXuấtToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1178, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1178, 24);
             this.menuStrip1.TabIndex = 35;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.đăngXuấtToolStripMenuItem.Text = "Trở Lại";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem1
             // 
             this.đăngXuấtToolStripMenuItem1.Name = "đăngXuấtToolStripMenuItem1";
-            this.đăngXuấtToolStripMenuItem1.Size = new System.Drawing.Size(94, 24);
+            this.đăngXuấtToolStripMenuItem1.Size = new System.Drawing.Size(74, 20);
             this.đăngXuấtToolStripMenuItem1.Text = "Đăng xuất";
             // 
             // fAdmin
@@ -497,7 +498,7 @@
         private System.Windows.Forms.TextBox txbUsername;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txbPassword;
+        private System.Windows.Forms.TextBox txbDisplayName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblUsername;

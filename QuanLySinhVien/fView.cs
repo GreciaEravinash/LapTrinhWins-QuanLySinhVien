@@ -222,11 +222,6 @@ namespace QuanLySinhVien
             listviewStudent.Sort();
         }
 
-        //private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        //{
-        //    MessageBox.Show(dateTimePicker1.Value.ToString("MM-dd-yyyy"));
-        //}
-
         private void AddBtn_Click(object sender, EventArgs e)
         {
             fAddNewStudent form = new fAddNewStudent();
