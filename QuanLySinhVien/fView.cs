@@ -103,7 +103,7 @@ namespace QuanLySinhVien
                 Birthdaytxt.Text = listviewStudent.FocusedItem.SubItems[2].Text.ToString();
                 Hometowntxt.Text = listviewStudent.FocusedItem.SubItems[3].Text.ToString();
 
-                genderCBX.SelectedIndex = MajorCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[4].Text.ToString());
+                genderCBX.SelectedIndex = genderCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[4].Text.ToString());
                 MajorCBX.SelectedIndex = MajorCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[5].Text.ToString());
                 ClassCBX.SelectedIndex = ClassCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[6].Text.ToString());
                 RankCBX.SelectedIndex = RankCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[7].Text.ToString());
