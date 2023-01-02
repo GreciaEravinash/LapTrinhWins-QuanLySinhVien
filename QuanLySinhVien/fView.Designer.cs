@@ -53,7 +53,6 @@
             this.Nametxt = new System.Windows.Forms.TextBox();
             this.Birthdaytxt = new System.Windows.Forms.TextBox();
             this.Hometowntxt = new System.Windows.Forms.TextBox();
-            this.Gendertxt = new System.Windows.Forms.TextBox();
             this.RankCBX = new System.Windows.Forms.ComboBox();
             this.AddBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
@@ -76,6 +75,7 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.genderCBX = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -291,18 +291,6 @@
             this.Hometowntxt.Name = "Hometowntxt";
             this.Hometowntxt.Size = new System.Drawing.Size(203, 27);
             this.Hometowntxt.TabIndex = 3;
-            // 
-            // Gendertxt
-            // 
-            this.Gendertxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Gendertxt.BackColor = System.Drawing.SystemColors.Window;
-            this.Gendertxt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Gendertxt.ForeColor = System.Drawing.Color.Black;
-            this.Gendertxt.Location = new System.Drawing.Point(181, 176);
-            this.Gendertxt.Name = "Gendertxt";
-            this.Gendertxt.Size = new System.Drawing.Size(203, 27);
-            this.Gendertxt.TabIndex = 4;
             // 
             // RankCBX
             // 
@@ -524,6 +512,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.genderCBX);
             this.panel1.Controls.Add(this.RefreshBtn);
             this.panel1.Controls.Add(this.MajorCBX);
             this.panel1.Controls.Add(this.ClassCBX);
@@ -539,7 +528,6 @@
             this.panel1.Controls.Add(this.Hometowntxt);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.EditBtn);
-            this.panel1.Controls.Add(this.Gendertxt);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label13);
@@ -645,6 +633,27 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
+            // genderCBX
+            // 
+            this.genderCBX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.genderCBX.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.genderCBX.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.genderCBX.BackColor = System.Drawing.SystemColors.Window;
+            this.genderCBX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.genderCBX.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderCBX.ForeColor = System.Drawing.Color.Black;
+            this.genderCBX.FormattingEnabled = true;
+            this.genderCBX.Items.AddRange(new object[] {
+            "Khác",
+            "Nam",
+            "Nữ"});
+            this.genderCBX.Location = new System.Drawing.Point(233, 176);
+            this.genderCBX.Name = "genderCBX";
+            this.genderCBX.Size = new System.Drawing.Size(151, 27);
+            this.genderCBX.Sorted = true;
+            this.genderCBX.TabIndex = 26;
+            // 
             // fView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -685,7 +694,6 @@
         private System.Windows.Forms.TextBox Nametxt;
         private System.Windows.Forms.TextBox Birthdaytxt;
         private System.Windows.Forms.TextBox Hometowntxt;
-        private System.Windows.Forms.TextBox Gendertxt;
         private System.Windows.Forms.ComboBox RankCBX;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -722,5 +730,6 @@
         private System.Windows.Forms.ComboBox MajorCBX;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button RefreshBtn;
+        private System.Windows.Forms.ComboBox genderCBX;
     }
 }

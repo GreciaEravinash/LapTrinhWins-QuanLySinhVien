@@ -102,8 +102,8 @@ namespace QuanLySinhVien
                 Nametxt.Text = listviewStudent.FocusedItem.SubItems[1].Text.ToString();
                 Birthdaytxt.Text = listviewStudent.FocusedItem.SubItems[2].Text.ToString();
                 Hometowntxt.Text = listviewStudent.FocusedItem.SubItems[3].Text.ToString();
-                Gendertxt.Text = listviewStudent.FocusedItem.SubItems[4].Text.ToString();
 
+                genderCBX.SelectedIndex = MajorCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[4].Text.ToString());
                 MajorCBX.SelectedIndex = MajorCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[5].Text.ToString());
                 ClassCBX.SelectedIndex = ClassCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[6].Text.ToString());
                 RankCBX.SelectedIndex = RankCBX.FindStringExact(listviewStudent.FocusedItem.SubItems[7].Text.ToString());
@@ -145,7 +145,7 @@ namespace QuanLySinhVien
             Nametxt.Clear();
             Birthdaytxt.Clear();
             Hometowntxt.Clear();
-            Gendertxt.Clear();
+            genderCBX.SelectedIndex = -1;
             MajorCBX.SelectedIndex = -1;
             ClassCBX.SelectedIndex = -1;
             RankCBX.SelectedIndex = -1;
@@ -177,7 +177,7 @@ namespace QuanLySinhVien
 
             if (result == DialogResult.Yes)
             {
-                StudentDAO.Instance.changeStudentInfo(Nametxt.Text,Mssvtxt.Text, Birthdaytxt.Text, Hometowntxt.Text, Gendertxt.Text, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
+                StudentDAO.Instance.changeStudentInfo(Nametxt.Text,Mssvtxt.Text, Birthdaytxt.Text, Hometowntxt.Text, genderCBX.Text, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
 
                 refreshStudentList();
 
