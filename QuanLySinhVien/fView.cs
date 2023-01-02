@@ -59,6 +59,15 @@ namespace QuanLySinhVien
             StudentDAO.Instance.LoadStudentList(listviewStudent);
             lblUsername.Text += " " + fLogin.loginName;
 
+            int totalStudent = 0;
+
+            foreach (ListViewItem item in listviewStudent.Items)
+            {
+                totalStudent++;
+            }
+
+            label8.Text += totalStudent;
+
             DataTable majorList = Major_Class_DAO.Instance.loadMajorList();
 
             foreach (DataRow item in majorList.Rows)

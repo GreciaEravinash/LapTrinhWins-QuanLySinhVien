@@ -519,7 +519,6 @@
             this.label19.Size = new System.Drawing.Size(819, 45);
             this.label19.TabIndex = 25;
             this.label19.Text = "DANH SÁCH SINH VIÊN KHOA CNTT";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // panel1
             // 
@@ -633,7 +632,6 @@
             this.label8.Size = new System.Drawing.Size(128, 17);
             this.label8.TabIndex = 32;
             this.label8.Text = "Tổng số sinh viên: ";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox1
             // 
