@@ -141,7 +141,7 @@ namespace QuanLySinhVien.DAO
             }
         }
 
-        public void addNewStudent(string mssv, string name, string birthday, string hometown, string gender, string major, string studentclass, string rank)
+        public bool addNewStudent(string mssv, string name, string birthday, string hometown, string gender, string major, string studentclass, string rank)
         {
             string checkExistedStudent = "select * from Student where mssv = @mssv";
 
@@ -150,6 +150,8 @@ namespace QuanLySinhVien.DAO
             if (tmp.Rows.Count > 0)
             {
                 MessageBox.Show("Không thể thêm thông tin sinh viên do đã tồn tại một sinh viên với MSSV là " + mssv);
+
+                return false;
             }
             else
             {
@@ -160,10 +162,14 @@ namespace QuanLySinhVien.DAO
                 if (data > 0)
                 {
                     MessageBox.Show("Thêm thông tin sinh viên thành công");
+
+                    return true;
                 }
                 else
                 {
                     MessageBox.Show("Đã xảy ra lỗi khi thêm thông tin sinh viên");
+
+                    return false;
                 }
             }
         }

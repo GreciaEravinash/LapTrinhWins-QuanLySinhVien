@@ -128,5 +128,17 @@ namespace QuanLySinhVien.DAO
                 listView.Items.Add(item);
             }
         }
+
+        public void resetPassword(string username)
+        {
+            string query = "update Account set password = 123 where username = @username";
+
+            int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username });
+
+            if (data > 0)
+            {
+                MessageBox.Show("Reset mật khẩu cho tài khoản thành công!");
+            }
+        }
     }
 }

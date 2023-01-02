@@ -32,11 +32,6 @@ namespace QuanLySinhVien
 
         }
 
-        private void EditAccBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void listviewAccountList_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listviewAccountList.SelectedItems.Count > 0)
@@ -107,6 +102,26 @@ namespace QuanLySinhVien
             txbName.Clear();
             txbDisplayName.Clear();
             txbUsername.Clear();
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResetPassBtn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txbUsername.Text))
+            {
+                DialogResult resetPasswordWarning = MessageBox.Show("Bạn có muốn reset lại mật khẩu của tài khoản này về lại mật khẩu mặc định không?", "Cảnh báo", MessageBoxButtons.OKCancel);
+
+                if (resetPasswordWarning == DialogResult.OK)
+                {
+                    AccountDAO.Instance.resetPassword(txbUsername.Text);
+
+                    refreshAccountList();
+                }
+            }
         }
     }
 }

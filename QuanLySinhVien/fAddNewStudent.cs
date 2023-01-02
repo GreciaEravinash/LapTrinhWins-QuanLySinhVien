@@ -40,10 +40,10 @@ namespace QuanLySinhVien
                 {
                     gender = "Khác";
                 }
-
-                StudentDAO.Instance.addNewStudent(txbMSSV.Text, txbStudentName.Text, DateTimePickerBirthday.Value.ToString("MM-dd-yyyy"), txbHometown.Text, gender, MajorCBX.Text, ClassCBX.Text, RankCBX.Text);
-
-                this.Close();
+                if (StudentDAO.Instance.addNewStudent(txbMSSV.Text, txbStudentName.Text, DateTimePickerBirthday.Value.ToString("MM-dd-yyyy"), txbHometown.Text, gender, MajorCBX.Text, ClassCBX.Text, RankCBX.Text) == true)
+                {
+                    this.Close();
+                }
             }
         }
 
