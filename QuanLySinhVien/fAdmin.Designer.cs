@@ -95,6 +95,7 @@
             this.listviewAccountList.TabIndex = 2;
             this.listviewAccountList.UseCompatibleStateImageBehavior = false;
             this.listviewAccountList.View = System.Windows.Forms.View.Details;
+            this.listviewAccountList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listviewAccountList_ColumnClick);
             this.listviewAccountList.SelectedIndexChanged += new System.EventHandler(this.listviewAccountList_SelectedIndexChanged);
             // 
             // columnHeader1
