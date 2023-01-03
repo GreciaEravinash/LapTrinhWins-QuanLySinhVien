@@ -42,6 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.AdminRBtn = new System.Windows.Forms.RadioButton();
+            this.StudentRBtn = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // MssvAccTxt
@@ -190,12 +192,38 @@
             this.label7.Text = "Mời bạn nhập thông tin";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // AdminRBtn
+            // 
+            this.AdminRBtn.AutoSize = true;
+            this.AdminRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminRBtn.Location = new System.Drawing.Point(275, 91);
+            this.AdminRBtn.Name = "AdminRBtn";
+            this.AdminRBtn.Size = new System.Drawing.Size(81, 26);
+            this.AdminRBtn.TabIndex = 17;
+            this.AdminRBtn.TabStop = true;
+            this.AdminRBtn.Text = "Admin";
+            this.AdminRBtn.UseVisualStyleBackColor = true;
+            // 
+            // StudentRBtn
+            // 
+            this.StudentRBtn.AutoSize = true;
+            this.StudentRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentRBtn.Location = new System.Drawing.Point(377, 91);
+            this.StudentRBtn.Name = "StudentRBtn";
+            this.StudentRBtn.Size = new System.Drawing.Size(105, 26);
+            this.StudentRBtn.TabIndex = 18;
+            this.StudentRBtn.TabStop = true;
+            this.StudentRBtn.Text = "Sinh viên";
+            this.StudentRBtn.UseVisualStyleBackColor = true;
+            // 
             // fAddNewAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(520, 501);
+            this.Controls.Add(this.StudentRBtn);
+            this.Controls.Add(this.AdminRBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
@@ -233,5 +261,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton AdminRBtn;
+        private System.Windows.Forms.RadioButton StudentRBtn;
     }
 }
