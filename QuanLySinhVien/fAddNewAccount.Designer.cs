@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AdminRBtn = new System.Windows.Forms.RadioButton();
-            this.StudentRBtn = new System.Windows.Forms.RadioButton();
             this.MssvAccTxt = new System.Windows.Forms.TextBox();
             this.NameAcctxt = new System.Windows.Forms.TextBox();
-            this.ClassAcctxt = new System.Windows.Forms.TextBox();
             this.UsernameAcctxt = new System.Windows.Forms.TextBox();
             this.DisplatnameAcctxt = new System.Windows.Forms.TextBox();
             this.BtnUpdate = new System.Windows.Forms.Button();
@@ -43,31 +40,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // AdminRBtn
-            // 
-            this.AdminRBtn.AutoSize = true;
-            this.AdminRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminRBtn.Location = new System.Drawing.Point(128, 75);
-            this.AdminRBtn.Name = "AdminRBtn";
-            this.AdminRBtn.Size = new System.Drawing.Size(89, 29);
-            this.AdminRBtn.TabIndex = 0;
-            this.AdminRBtn.TabStop = true;
-            this.AdminRBtn.Text = "Admin";
-            this.AdminRBtn.UseVisualStyleBackColor = true;
-            // 
-            // StudentRBtn
-            // 
-            this.StudentRBtn.AutoSize = true;
-            this.StudentRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentRBtn.Location = new System.Drawing.Point(280, 75);
-            this.StudentRBtn.Name = "StudentRBtn";
-            this.StudentRBtn.Size = new System.Drawing.Size(114, 29);
-            this.StudentRBtn.TabIndex = 1;
-            this.StudentRBtn.TabStop = true;
-            this.StudentRBtn.Text = "Sinh viên";
-            this.StudentRBtn.UseVisualStyleBackColor = true;
             // 
             // MssvAccTxt
             // 
@@ -84,14 +59,6 @@
             this.NameAcctxt.Name = "NameAcctxt";
             this.NameAcctxt.Size = new System.Drawing.Size(280, 30);
             this.NameAcctxt.TabIndex = 3;
-            // 
-            // ClassAcctxt
-            // 
-            this.ClassAcctxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClassAcctxt.Location = new System.Drawing.Point(202, 249);
-            this.ClassAcctxt.Name = "ClassAcctxt";
-            this.ClassAcctxt.Size = new System.Drawing.Size(280, 30);
-            this.ClassAcctxt.TabIndex = 4;
             // 
             // UsernameAcctxt
             // 
@@ -195,12 +162,33 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Tomato;
-            this.label6.Location = new System.Drawing.Point(123, 25);
+            this.label6.Location = new System.Drawing.Point(123, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(271, 29);
             this.label6.TabIndex = 14;
             this.label6.Text = "Cài đặt thêm tài khoản";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(305, 251);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(177, 30);
+            this.comboBox1.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(28, 91);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(232, 25);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Mời bạn nhập thông tin";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fAddNewAccount
             // 
@@ -208,6 +196,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(520, 501);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -218,11 +208,8 @@
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.DisplatnameAcctxt);
             this.Controls.Add(this.UsernameAcctxt);
-            this.Controls.Add(this.ClassAcctxt);
             this.Controls.Add(this.NameAcctxt);
             this.Controls.Add(this.MssvAccTxt);
-            this.Controls.Add(this.StudentRBtn);
-            this.Controls.Add(this.AdminRBtn);
             this.Name = "fAddNewAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm thông tin tài khoản ";
@@ -232,12 +219,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RadioButton AdminRBtn;
-        private System.Windows.Forms.RadioButton StudentRBtn;
         private System.Windows.Forms.TextBox MssvAccTxt;
         private System.Windows.Forms.TextBox NameAcctxt;
-        private System.Windows.Forms.TextBox ClassAcctxt;
         private System.Windows.Forms.TextBox UsernameAcctxt;
         private System.Windows.Forms.TextBox DisplatnameAcctxt;
         private System.Windows.Forms.Button BtnUpdate;
@@ -248,5 +231,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
