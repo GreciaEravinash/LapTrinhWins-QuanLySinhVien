@@ -173,5 +173,17 @@ namespace QuanLySinhVien.DAO
                 }
             }
         }
+        public bool thisStudentExist(string mssv)
+        {
+            string query = "select * from Student where mssv = @mssv";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { mssv });
+
+            if (data.Rows.Count > 0)
+            {
+                return true;
+            }
+            else return false;
+        }
     }
 }

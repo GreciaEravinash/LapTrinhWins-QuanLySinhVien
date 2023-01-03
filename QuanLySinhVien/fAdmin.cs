@@ -150,8 +150,9 @@ namespace QuanLySinhVien
         private void AddAccBtn_Click(object sender, EventArgs e)
         {
             fAddNewAccount f = new fAddNewAccount();
+            this.Hide();
             f.ShowDialog();
-
+            this.Show();
         }
     }
 }

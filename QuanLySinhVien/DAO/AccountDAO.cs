@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -138,6 +139,96 @@ namespace QuanLySinhVien.DAO
             if (data > 0)
             {
                 MessageBox.Show("Reset mật khẩu cho tài khoản thành công!");
+            }
+        }
+
+        public bool thisStudentAccountExist_Or_NonExistentStudent(string mssv)
+        {
+            if (StudentDAO.Instance.thisStudentExist(mssv))
+            {
+                string query = "select * from Account where mssv = @mssv";
+
+                DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { mssv });
+
+                if (data.Rows.Count > 0)
+                {
+                    return true;
+                }
+                else return false;
+            }
+            else return true;
+        }
+
+        public bool thisAdminAccountExist(string username)
+        {
+            string query = "select * from Account where username = @mssv";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { username });
+
+            if (data.Rows.Count > 0)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public bool createNewAccount(int type, string mssv, string name, string username, string displayname)
+        {
+            if (type == 0)
+            {
+                if (thisStudentAccountExist_Or_NonExistentStudent(mssv))
+                {
+                    MessageBox.Show("Tài khoản của sinh viên có MSSV là " + mssv + " đã tồn tại");
+
+                    return false;
+                }
+                else
+                {
+                    string query = "insert into Account values ( @username , 123 , @displayname , @mssv , @type )";
+
+                    int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, displayname, mssv, type });
+
+                    if (data > 0)
+                    {
+                        MessageBox.Show("Tạo tài khoản mới thành công");
+
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã có lỗi xảy ra khi tạo tài khoản mới");
+
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                if (thisAdminAccountExist(username))
+                {
+                    MessageBox.Show("Tài khoản với tên tài khoản là " + username + " này đã tồn tại");
+
+                    return false;
+                }
+                else
+                {
+                    string query = "insert into Account ( username , password , displayname , type) values ( @username , 123 , @displayname , @type )";
+
+                    int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, displayname, type });
+
+                    if (data > 0)
+                    {
+                        MessageBox.Show("Tạo tài khoản mới thành công");
+
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Đã có lỗi xảy ra khi tạo tài khoản mới");
+
+                        return false;
+                    }
+                }
             }
         }
     }
