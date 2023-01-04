@@ -24,9 +24,16 @@ namespace QuanLySinhVien
             AdminRBtn.Checked = true;
         }
 
+        private void clearInput()
+        {
+            MssvAccTxt.Clear();
+            NameAcctxt.Clear();
+            UsernameAcctxt.Clear();
+            DisplaynameAcctxt.Clear();
+        }
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            if ((string.IsNullOrWhiteSpace(MssvAccTxt.Text) && StudentRBtn.Checked ) || string.IsNullOrWhiteSpace(NameAcctxt.Text) || string.IsNullOrWhiteSpace(DisplatnameAcctxt.Text))
+            if ((string.IsNullOrWhiteSpace(MssvAccTxt.Text) && StudentRBtn.Checked ) || string.IsNullOrWhiteSpace(NameAcctxt.Text) || string.IsNullOrWhiteSpace(DisplaynameAcctxt.Text))
             {
                 MessageBox.Show("Bạn chưa điền đầy đủ các thông tin cần thiết");
             }
@@ -38,7 +45,7 @@ namespace QuanLySinhVien
                     type = 1;
                 }
                 else type = 0;
-                if (AccountDAO.Instance.createNewAccount(type, MssvAccTxt.Text, NameAcctxt.Text, UsernameAcctxt.Text, DisplatnameAcctxt.Text))
+                if (AccountDAO.Instance.createNewAccount(type, MssvAccTxt.Text, NameAcctxt.Text, UsernameAcctxt.Text, DisplaynameAcctxt.Text))
                 {
                     this.Close();
                 }
@@ -52,7 +59,7 @@ namespace QuanLySinhVien
 
         private void NameAcctxt_TextChanged(object sender, EventArgs e)
         {
-            DisplatnameAcctxt.Text = NameAcctxt.Text;
+            DisplaynameAcctxt.Text = NameAcctxt.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,12 +71,16 @@ namespace QuanLySinhVien
         {
             if (AdminRBtn.Checked)
             {
+                clearInput();
+
                 MssvAccTxt.Enabled = false;
 
                 UsernameAcctxt.Enabled = true;
             }
             else
             {
+                clearInput();
+
                 MssvAccTxt.Enabled = true;
 
                 UsernameAcctxt.Enabled = false;
@@ -80,9 +91,7 @@ namespace QuanLySinhVien
         {
             if (StudentRBtn.Checked)
             {
-                //MssvAccTxt.ReadOnly = false;
-
-                //UsernameAcctxt.ReadOnly = true;
+                clearInput();
 
                 MssvAccTxt.Enabled = true;
 
@@ -90,6 +99,8 @@ namespace QuanLySinhVien
             }
             else
             {
+                clearInput();
+
                 MssvAccTxt.Enabled = false;
 
                 UsernameAcctxt.Enabled = true;
