@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddNewStudent));
             this.txbMSSV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -91,7 +92,7 @@
             // 
             this.panel1.Controls.Add(this.txbMSSV);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(18, 53);
+            this.panel1.Location = new System.Drawing.Point(24, 70);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 59);
@@ -101,7 +102,7 @@
             // 
             this.panel2.Controls.Add(this.txbStudentName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(18, 133);
+            this.panel2.Location = new System.Drawing.Point(24, 150);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(514, 60);
@@ -131,7 +132,7 @@
             // 
             this.panel3.Controls.Add(this.DateTimePickerBirthday);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(18, 213);
+            this.panel3.Location = new System.Drawing.Point(24, 230);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(514, 62);
@@ -162,7 +163,7 @@
             // 
             this.panel4.Controls.Add(this.txbHometown);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(18, 298);
+            this.panel4.Location = new System.Drawing.Point(24, 315);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(514, 59);
@@ -194,7 +195,7 @@
             this.panel5.Controls.Add(this.rdbtnFemale);
             this.panel5.Controls.Add(this.rdbtnMale);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(578, 53);
+            this.panel5.Location = new System.Drawing.Point(584, 70);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(387, 59);
@@ -254,7 +255,7 @@
             // 
             this.panel6.Controls.Add(this.MajorCBX);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(578, 133);
+            this.panel6.Location = new System.Drawing.Point(584, 150);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(387, 60);
@@ -285,7 +286,7 @@
             // 
             this.panel7.Controls.Add(this.RankCBX);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(578, 298);
+            this.panel7.Location = new System.Drawing.Point(584, 315);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(387, 59);
@@ -316,7 +317,7 @@
             // 
             this.panel8.Controls.Add(this.ClassCBX);
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Location = new System.Drawing.Point(578, 213);
+            this.panel8.Location = new System.Drawing.Point(584, 230);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(387, 62);
@@ -347,7 +348,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(626, 375);
+            this.button1.Location = new System.Drawing.Point(632, 392);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 55);
@@ -360,7 +361,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(806, 375);
+            this.button2.Location = new System.Drawing.Point(812, 392);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 55);
@@ -372,21 +373,22 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Tomato;
-            this.label9.Location = new System.Drawing.Point(273, 9);
+            this.label9.Location = new System.Drawing.Point(230, 20);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(468, 29);
+            this.label9.Size = new System.Drawing.Size(549, 32);
             this.label9.TabIndex = 10;
             this.label9.Text = "Nhập thông tin sinh viên cần được thêm";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fAddNewStudent
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(984, 443);
+            this.ClientSize = new System.Drawing.Size(1000, 460);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -398,6 +400,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fAddNewStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

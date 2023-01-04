@@ -36,9 +36,6 @@
             this.danhSáchTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemVersion = new System.Windows.Forms.ToolStripMenuItem();
-            this.v100ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinVềPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.listviewStudent = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -66,7 +63,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.SortBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.genderCBX = new System.Windows.Forms.ComboBox();
@@ -91,11 +87,10 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItemAccountInfo,
-            this.ToolStripMenuItemHelp,
-            this.ToolStripMenuItemVersion});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 2);
+            this.ToolStripMenuItemHelp});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1490, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1372, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,7 +101,7 @@
             this.danhSáchTàiKhoảnToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.ToolStripMenuItemAccountInfo.Name = "ToolStripMenuItemAccountInfo";
-            this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(157, 24);
+            this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(157, 26);
             this.ToolStripMenuItemAccountInfo.Text = "Thông tin tài khoản";
             // 
             // AccountInfoToolStripMenuItem
@@ -133,30 +128,9 @@
             // ToolStripMenuItemHelp
             // 
             this.ToolStripMenuItemHelp.Name = "ToolStripMenuItemHelp";
-            this.ToolStripMenuItemHelp.Size = new System.Drawing.Size(80, 24);
+            this.ToolStripMenuItemHelp.Size = new System.Drawing.Size(80, 26);
             this.ToolStripMenuItemHelp.Text = "Trợ giúp";
             this.ToolStripMenuItemHelp.Click += new System.EventHandler(this.ToolStripMenuItemHelp_Click);
-            // 
-            // ToolStripMenuItemVersion
-            // 
-            this.ToolStripMenuItemVersion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.v100ToolStripMenuItem,
-            this.thôngTinVềPhầnMềmToolStripMenuItem});
-            this.ToolStripMenuItemVersion.Name = "ToolStripMenuItemVersion";
-            this.ToolStripMenuItemVersion.Size = new System.Drawing.Size(92, 24);
-            this.ToolStripMenuItemVersion.Text = "Phiên bản";
-            // 
-            // v100ToolStripMenuItem
-            // 
-            this.v100ToolStripMenuItem.Name = "v100ToolStripMenuItem";
-            this.v100ToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
-            this.v100ToolStripMenuItem.Text = "v1.0.0";
-            // 
-            // thôngTinVềPhầnMềmToolStripMenuItem
-            // 
-            this.thôngTinVềPhầnMềmToolStripMenuItem.Name = "thôngTinVềPhầnMềmToolStripMenuItem";
-            this.thôngTinVềPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
-            this.thôngTinVềPhầnMềmToolStripMenuItem.Text = "Thông tin về phần mềm";
             // 
             // contextMenuStrip1
             // 
@@ -361,7 +335,7 @@
             this.SreachBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.SreachBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SreachBtn.ForeColor = System.Drawing.Color.Black;
-            this.SreachBtn.Location = new System.Drawing.Point(284, 340);
+            this.SreachBtn.Location = new System.Drawing.Point(215, 340);
             this.SreachBtn.Name = "SreachBtn";
             this.SreachBtn.Size = new System.Drawing.Size(116, 52);
             this.SreachBtn.TabIndex = 13;
@@ -481,21 +455,6 @@
             this.label18.TabIndex = 24;
             this.label18.Text = "Lớp";
             // 
-            // SortBtn
-            // 
-            this.SortBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SortBtn.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.SortBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SortBtn.ForeColor = System.Drawing.Color.Black;
-            this.SortBtn.Location = new System.Drawing.Point(149, 340);
-            this.SortBtn.Name = "SortBtn";
-            this.SortBtn.Size = new System.Drawing.Size(116, 52);
-            this.SortBtn.TabIndex = 11;
-            this.SortBtn.Text = "SẮP XẾP";
-            this.SortBtn.UseVisualStyleBackColor = false;
-            this.SortBtn.Click += new System.EventHandler(this.SortBtn_Click);
-            // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -524,7 +483,6 @@
             this.panel1.Controls.Add(this.AddBtn);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.DeleteBtn);
-            this.panel1.Controls.Add(this.SortBtn);
             this.panel1.Controls.Add(this.Hometowntxt);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.EditBtn);
@@ -572,9 +530,9 @@
             this.RefreshBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.RefreshBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RefreshBtn.ForeColor = System.Drawing.Color.Black;
-            this.RefreshBtn.Location = new System.Drawing.Point(40, 340);
+            this.RefreshBtn.Location = new System.Drawing.Point(108, 340);
             this.RefreshBtn.Name = "RefreshBtn";
-            this.RefreshBtn.Size = new System.Drawing.Size(63, 52);
+            this.RefreshBtn.Size = new System.Drawing.Size(59, 52);
             this.RefreshBtn.TabIndex = 25;
             this.RefreshBtn.UseVisualStyleBackColor = false;
             this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
@@ -688,8 +646,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemAccountInfo;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemVersion;
-        private System.Windows.Forms.ToolStripMenuItem v100ToolStripMenuItem;
         private System.Windows.Forms.TextBox Mssvtxt;
         private System.Windows.Forms.TextBox Nametxt;
         private System.Windows.Forms.TextBox Birthdaytxt;
@@ -716,8 +672,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ToolStripMenuItem thôngTinVềPhầnMềmToolStripMenuItem;
-        private System.Windows.Forms.Button SortBtn;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox ClassCBX;

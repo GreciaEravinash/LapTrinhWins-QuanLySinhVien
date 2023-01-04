@@ -44,7 +44,7 @@
             this.txbSearchValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearchValue.HideSelection = false;
             this.txbSearchValue.Location = new System.Drawing.Point(265, 121);
-            this.txbSearchValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSearchValue.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearchValue.Name = "txbSearchValue";
             this.txbSearchValue.Size = new System.Drawing.Size(341, 28);
             this.txbSearchValue.TabIndex = 2;
@@ -54,10 +54,10 @@
             this.btnSearch.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSearch.Location = new System.Drawing.Point(293, 185);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Location = new System.Drawing.Point(284, 172);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(148, 44);
+            this.btnSearch.Size = new System.Drawing.Size(148, 57);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "TÌM KIẾM";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -67,10 +67,10 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(458, 185);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(458, 172);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(148, 44);
+            this.btnCancel.Size = new System.Drawing.Size(148, 57);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "HỦY";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -84,7 +84,7 @@
             "Tìm kiếm theo MSSV",
             "Tìm kiếm theo tên"});
             this.cmbxSearchType.Location = new System.Drawing.Point(13, 119);
-            this.cmbxSearchType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxSearchType.Margin = new System.Windows.Forms.Padding(4);
             this.cmbxSearchType.Name = "cmbxSearchType";
             this.cmbxSearchType.Size = new System.Drawing.Size(235, 30);
             this.cmbxSearchType.TabIndex = 6;
@@ -127,6 +127,7 @@
             // 
             // fSearch
             // 
+            this.AcceptButton = this.btnSearch;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
@@ -139,7 +140,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txbSearchValue);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm thông tin sinh viên";

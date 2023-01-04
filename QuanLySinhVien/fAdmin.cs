@@ -24,7 +24,7 @@ namespace QuanLySinhVien
             AccountDAO.Instance.loadAccountList(listviewAccountList);
             txbMssv.ReadOnly = true;
             txbName.ReadOnly = true;
-            txbClass.ReadOnly = true;
+            
         }
 
         private void listviewAccountList_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace QuanLySinhVien
             {
                 txbMssv.Text = listviewAccountList.FocusedItem.SubItems[0].Text.ToString();
                 txbName.Text = listviewAccountList.FocusedItem.SubItems[1].Text.ToString();
-                txbClass.Text = listviewAccountList.FocusedItem.SubItems[2].Text.ToString();
+                
                 txbUsername.Text = listviewAccountList.FocusedItem.SubItems[3].Text.ToString();
                 txbDisplayName.Text = listviewAccountList.FocusedItem.SubItems[4].Text.ToString();
             }
@@ -92,17 +92,14 @@ namespace QuanLySinhVien
         {
             refreshAccountList();
 
-            txbClass.Clear();
+            
             txbMssv.Clear();
             txbName.Clear();
             txbDisplayName.Clear();
             txbUsername.Clear();
         }
 
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void ResetPassBtn_Click(object sender, EventArgs e)
         {
