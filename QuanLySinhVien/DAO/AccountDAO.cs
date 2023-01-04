@@ -40,9 +40,18 @@ namespace QuanLySinhVien.DAO
             return result.Rows.Count > 0;
         }
 
+        public string getAccountDisplayName(string username, string password)
+        {
+            string query = "select displayname from Account where username = @username and password = @password";
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, password});
+
+            return result.Rows[0][0].ToString();
+        }
+
         public void loadAccountList(ListView accountList)
         {
-            string query = "select Account.mssv , studentname , class , username , displayname from Student inner join Account on Student.mssv = Account.mssv";
+            string query = "select Account.mssv , studentname , username , displayname from Student inner join Account on Student.mssv = Account.mssv";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -142,21 +151,17 @@ namespace QuanLySinhVien.DAO
             }
         }
 
-        public bool thisStudentAccountExist_Or_NonExistentStudent(string mssv)
+        public bool thisStudentAccountExist(string mssv)
         {
-            if (StudentDAO.Instance.thisStudentExist(mssv))
+            string query = "select * from Account where mssv = @mssv";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { mssv });
+
+            if (data.Rows.Count > 0)
             {
-                string query = "select * from Account where mssv = @mssv";
-
-                DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { mssv });
-
-                if (data.Rows.Count > 0)
-                {
-                    return true;
-                }
-                else return false;
+                return true;
             }
-            else return true;
+            else return false;
         }
 
         public bool thisAdminAccountExist(string username)
@@ -176,29 +181,40 @@ namespace QuanLySinhVien.DAO
         {
             if (type == 0)
             {
-                if (thisStudentAccountExist_Or_NonExistentStudent(mssv))
+                if (!StudentDAO.Instance.thisStudentExist(mssv))
                 {
-                    MessageBox.Show("Tài khoản của sinh viên có MSSV là " + mssv + " đã tồn tại");
+                    MessageBox.Show("Sinh viên có MSSV là " + mssv + " không tồn tại trong hệ thống!");
+
+                    //MessageBox.Show("Tài khoản của sinh viên có MSSV là " + mssv + " đã tồn tại");
 
                     return false;
                 }
                 else
                 {
-                    string query = "insert into Account values ( @username , 123 , @displayname , @mssv , @type )";
-
-                    int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, displayname, mssv, type });
-
-                    if (data > 0)
+                    if (thisStudentAccountExist(mssv))
                     {
-                        MessageBox.Show("Tạo tài khoản mới thành công");
+                        MessageBox.Show("Tài khoản của sinh viên có MSSV là " + mssv + " đã tồn tại");
 
-                        return true;
+                        return false;
                     }
                     else
                     {
-                        MessageBox.Show("Đã có lỗi xảy ra khi tạo tài khoản mới");
+                        string query = "insert into Account values ( @username , 123 , @displayname , @mssv , @type )";
 
-                        return false;
+                        int data = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, displayname, mssv, type });
+
+                        if (data > 0)
+                        {
+                            MessageBox.Show("Tạo tài khoản mới thành công");
+
+                            return true;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Đã có lỗi xảy ra khi tạo tài khoản mới");
+
+                            return false;
+                        }
                     }
                 }
             }

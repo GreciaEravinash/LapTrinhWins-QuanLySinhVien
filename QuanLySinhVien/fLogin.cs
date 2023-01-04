@@ -43,7 +43,7 @@ namespace QuanLySinhVien
             if (AccountDAO.Instance.isValidAccount(username, password, '0'))
             {
                 isAdmin = false;
-                loginName = username;
+                loginName = AccountDAO.Instance.getAccountDisplayName(username, password);
                 fView f = new fView();
                 this.Hide();
                 f.ShowDialog();
@@ -53,7 +53,7 @@ namespace QuanLySinhVien
             else if (AccountDAO.Instance.isValidAccount(username, password, '1'))
             {
                 isAdmin = true;
-                loginName = username;
+                loginName = AccountDAO.Instance.getAccountDisplayName(username, password);
                 fView f = new fView();
                 this.Hide();
                 f.ShowDialog();

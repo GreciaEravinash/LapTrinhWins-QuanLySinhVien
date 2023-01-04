@@ -34,8 +34,8 @@ namespace QuanLySinhVien
                 txbMssv.Text = listviewAccountList.FocusedItem.SubItems[0].Text.ToString();
                 txbName.Text = listviewAccountList.FocusedItem.SubItems[1].Text.ToString();
                 
-                txbUsername.Text = listviewAccountList.FocusedItem.SubItems[3].Text.ToString();
-                txbDisplayName.Text = listviewAccountList.FocusedItem.SubItems[4].Text.ToString();
+                txbUsername.Text = listviewAccountList.FocusedItem.SubItems[2].Text.ToString();
+                txbDisplayName.Text = listviewAccountList.FocusedItem.SubItems[3].Text.ToString();
             }
         }
 
@@ -150,6 +150,7 @@ namespace QuanLySinhVien
             this.Hide();
             f.ShowDialog();
             this.Show();
+            refreshAccountList();
         }
     }
 }
