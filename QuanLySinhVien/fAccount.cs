@@ -32,7 +32,7 @@ namespace QuanLySinhVien
 
         private void loadCurrentAccountInfo()
         {
-            txbUsername.Text = fView.loginName;
+            txbUsername.Text = fView.formUsername;
 
             DataTable accountInfo = AccountDAO.Instance.getAccountInfo(txbUsername.Text);
 

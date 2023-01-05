@@ -23,6 +23,8 @@ namespace QuanLySinhVien
 
         public static string loginName = "";
 
+        public static string formUsername = "";
+
         private void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -43,6 +45,7 @@ namespace QuanLySinhVien
             if (AccountDAO.Instance.isValidAccount(username, password, '0'))
             {
                 isAdmin = false;
+                formUsername = UserNameTxt.Text;
                 loginName = AccountDAO.Instance.getAccountDisplayName(username, password);
                 fView f = new fView();
                 this.Hide();
@@ -53,6 +56,7 @@ namespace QuanLySinhVien
             else if (AccountDAO.Instance.isValidAccount(username, password, '1'))
             {
                 isAdmin = true;
+                formUsername = UserNameTxt.Text;
                 loginName = AccountDAO.Instance.getAccountDisplayName(username, password);
                 fView f = new fView();
                 this.Hide();
