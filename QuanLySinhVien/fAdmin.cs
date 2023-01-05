@@ -152,5 +152,11 @@ namespace QuanLySinhVien
             this.Show();
             refreshAccountList();
         }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fHelp f = new fHelp();
+            f.Show();
+        }
     }
 }

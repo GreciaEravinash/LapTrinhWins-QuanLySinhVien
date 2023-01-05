@@ -48,39 +48,39 @@
             // MssvAccTxt
             // 
             this.MssvAccTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MssvAccTxt.Location = new System.Drawing.Point(174, 145);
-            this.MssvAccTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MssvAccTxt.Location = new System.Drawing.Point(232, 178);
+            this.MssvAccTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MssvAccTxt.Name = "MssvAccTxt";
-            this.MssvAccTxt.Size = new System.Drawing.Size(211, 26);
+            this.MssvAccTxt.Size = new System.Drawing.Size(280, 30);
             this.MssvAccTxt.TabIndex = 2;
             this.MssvAccTxt.TextChanged += new System.EventHandler(this.MssvAccTxt_TextChanged);
             // 
             // NameAcctxt
             // 
             this.NameAcctxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameAcctxt.Location = new System.Drawing.Point(174, 190);
-            this.NameAcctxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NameAcctxt.Location = new System.Drawing.Point(232, 234);
+            this.NameAcctxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NameAcctxt.Name = "NameAcctxt";
-            this.NameAcctxt.Size = new System.Drawing.Size(211, 26);
+            this.NameAcctxt.Size = new System.Drawing.Size(280, 30);
             this.NameAcctxt.TabIndex = 3;
             this.NameAcctxt.TextChanged += new System.EventHandler(this.NameAcctxt_TextChanged);
             // 
             // UsernameAcctxt
             // 
             this.UsernameAcctxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameAcctxt.Location = new System.Drawing.Point(174, 238);
-            this.UsernameAcctxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsernameAcctxt.Location = new System.Drawing.Point(232, 293);
+            this.UsernameAcctxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UsernameAcctxt.Name = "UsernameAcctxt";
-            this.UsernameAcctxt.Size = new System.Drawing.Size(211, 26);
+            this.UsernameAcctxt.Size = new System.Drawing.Size(280, 30);
             this.UsernameAcctxt.TabIndex = 5;
             // 
             // DisplaynameAcctxt
             // 
             this.DisplaynameAcctxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplaynameAcctxt.Location = new System.Drawing.Point(174, 284);
-            this.DisplaynameAcctxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DisplaynameAcctxt.Location = new System.Drawing.Point(232, 350);
+            this.DisplaynameAcctxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DisplaynameAcctxt.Name = "DisplaynameAcctxt";
-            this.DisplaynameAcctxt.Size = new System.Drawing.Size(211, 26);
+            this.DisplaynameAcctxt.Size = new System.Drawing.Size(280, 30);
             this.DisplaynameAcctxt.TabIndex = 6;
             // 
             // BtnUpdate
@@ -88,9 +88,10 @@
             this.BtnUpdate.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.BtnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.BtnUpdate.Location = new System.Drawing.Point(153, 328);
+            this.BtnUpdate.Location = new System.Drawing.Point(204, 404);
+            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(104, 49);
+            this.BtnUpdate.Size = new System.Drawing.Size(139, 60);
             this.BtnUpdate.TabIndex = 7;
             this.BtnUpdate.Text = "THÊM";
             this.BtnUpdate.UseVisualStyleBackColor = false;
@@ -101,9 +102,10 @@
             this.button1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(280, 328);
+            this.button1.Location = new System.Drawing.Point(373, 404);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 49);
+            this.button1.Size = new System.Drawing.Size(139, 60);
             this.button1.TabIndex = 8;
             this.button1.Text = "HỦY";
             this.button1.UseVisualStyleBackColor = false;
@@ -113,9 +115,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 145);
+            this.label1.Location = new System.Drawing.Point(28, 178);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.Size = new System.Drawing.Size(114, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Mã số SV:";
             // 
@@ -123,9 +126,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 191);
+            this.label3.Location = new System.Drawing.Point(28, 235);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 20);
+            this.label3.Size = new System.Drawing.Size(111, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Họ và tên:";
             // 
@@ -133,9 +137,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 240);
+            this.label4.Location = new System.Drawing.Point(28, 295);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 20);
+            this.label4.Size = new System.Drawing.Size(151, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Tên tài khoản:";
             // 
@@ -143,9 +148,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 283);
+            this.label5.Location = new System.Drawing.Point(28, 348);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 20);
+            this.label5.Size = new System.Drawing.Size(133, 25);
             this.label5.TabIndex = 13;
             this.label5.Text = "Tên hiển thị:";
             // 
@@ -154,10 +160,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Tomato;
-            this.label6.Location = new System.Drawing.Point(109, 36);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(156, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 26);
+            this.label6.Size = new System.Drawing.Size(250, 32);
             this.label6.TabIndex = 14;
             this.label6.Text = "Đăng kí tài khoản";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,10 +172,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(21, 98);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(28, 121);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 20);
+            this.label7.Size = new System.Drawing.Size(232, 25);
             this.label7.TabIndex = 16;
             this.label7.Text = "Mời bạn nhập thông tin";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -179,10 +183,10 @@
             // 
             this.AdminRBtn.AutoSize = true;
             this.AdminRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminRBtn.Location = new System.Drawing.Point(228, 97);
-            this.AdminRBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AdminRBtn.Location = new System.Drawing.Point(304, 119);
+            this.AdminRBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AdminRBtn.Name = "AdminRBtn";
-            this.AdminRBtn.Size = new System.Drawing.Size(67, 22);
+            this.AdminRBtn.Size = new System.Drawing.Size(81, 26);
             this.AdminRBtn.TabIndex = 17;
             this.AdminRBtn.TabStop = true;
             this.AdminRBtn.Text = "Admin";
@@ -193,10 +197,10 @@
             // 
             this.StudentRBtn.AutoSize = true;
             this.StudentRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentRBtn.Location = new System.Drawing.Point(305, 97);
-            this.StudentRBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StudentRBtn.Location = new System.Drawing.Point(407, 119);
+            this.StudentRBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StudentRBtn.Name = "StudentRBtn";
-            this.StudentRBtn.Size = new System.Drawing.Size(85, 22);
+            this.StudentRBtn.Size = new System.Drawing.Size(105, 26);
             this.StudentRBtn.TabIndex = 18;
             this.StudentRBtn.TabStop = true;
             this.StudentRBtn.Text = "Sinh viên";
@@ -206,10 +210,10 @@
             // fAddNewAccount
             // 
             this.AcceptButton = this.BtnUpdate;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(409, 392);
+            this.ClientSize = new System.Drawing.Size(545, 482);
             this.Controls.Add(this.StudentRBtn);
             this.Controls.Add(this.AdminRBtn);
             this.Controls.Add(this.label7);
@@ -225,7 +229,7 @@
             this.Controls.Add(this.NameAcctxt);
             this.Controls.Add(this.MssvAccTxt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fAddNewAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm thông tin tài khoản ";

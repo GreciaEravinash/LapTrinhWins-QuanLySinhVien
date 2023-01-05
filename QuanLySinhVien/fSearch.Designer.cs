@@ -94,12 +94,13 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Tomato;
-            this.label6.Location = new System.Drawing.Point(125, 23);
+            this.label6.Location = new System.Drawing.Point(138, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(382, 29);
             this.label6.TabIndex = 7;
             this.label6.Text = "Nhập thông tin sinh viên cần tìm";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 

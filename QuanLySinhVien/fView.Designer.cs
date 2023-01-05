@@ -461,7 +461,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Tomato;
-            this.label19.Location = new System.Drawing.Point(352, 59);
+            this.label19.Location = new System.Drawing.Point(350, 59);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(819, 45);
             this.label19.TabIndex = 25;
