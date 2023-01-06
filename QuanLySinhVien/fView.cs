@@ -190,25 +190,7 @@ namespace QuanLySinhVien
             }
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SortBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void listviewStudent_ColumnClick(object sender, ColumnClickEventArgs e)
         {
@@ -253,6 +235,11 @@ namespace QuanLySinhVien
             refreshStudentList();
 
             clearInput();
+        }
+
+        private void ToolStripMenuItemAccountInfo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

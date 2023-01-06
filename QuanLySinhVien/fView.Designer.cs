@@ -101,8 +101,9 @@
             this.danhSáchTàiKhoảnToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.ToolStripMenuItemAccountInfo.Name = "ToolStripMenuItemAccountInfo";
-            this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(157, 26);
-            this.ToolStripMenuItemAccountInfo.Text = "Thông tin tài khoản";
+            this.ToolStripMenuItemAccountInfo.Size = new System.Drawing.Size(89, 26);
+            this.ToolStripMenuItemAccountInfo.Text = "Tài khoản";
+            this.ToolStripMenuItemAccountInfo.Click += new System.EventHandler(this.ToolStripMenuItemAccountInfo_Click);
             // 
             // AccountInfoToolStripMenuItem
             // 
@@ -498,7 +499,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(403, 476);
             this.panel1.TabIndex = 26;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // genderCBX
             // 
@@ -584,7 +584,6 @@
             this.lblUsername.Size = new System.Drawing.Size(107, 20);
             this.lblUsername.TabIndex = 27;
             this.lblUsername.Text = "Tên truy cập:";
-            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // label8
             // 
