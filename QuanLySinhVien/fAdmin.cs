@@ -24,7 +24,16 @@ namespace QuanLySinhVien
             AccountDAO.Instance.loadAccountList(listviewAccountList);
             txbMssv.ReadOnly = true;
             txbName.ReadOnly = true;
-            
+
+            int totalAccount = 0;
+
+            foreach (ListViewItem item in listviewAccountList.Items)
+            {
+                totalAccount++;
+            }
+
+            label8.Text += totalAccount;
+
         }
 
         private void listviewAccountList_SelectedIndexChanged(object sender, EventArgs e)
