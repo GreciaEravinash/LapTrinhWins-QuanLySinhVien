@@ -18,6 +18,17 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
 
+        private void getTotal()
+        {
+            int totalAccount = 0;
+
+            foreach (ListViewItem item in listviewAccountList.Items)
+            {
+                totalAccount++;
+            }
+            label8.Text = "Tổng số tài khoản: ";
+            label8.Text += totalAccount;
+        }
         private void fAdmin_Load(object sender, EventArgs e)
         {
             lblUsername.Text += " " + fLogin.loginName;
@@ -25,14 +36,7 @@ namespace QuanLySinhVien
             txbMssv.ReadOnly = true;
             txbName.ReadOnly = true;
 
-            int totalAccount = 0;
-
-            foreach (ListViewItem item in listviewAccountList.Items)
-            {
-                totalAccount++;
-            }
-
-            label8.Text += totalAccount;
+            getTotal();
 
         }
 
@@ -64,6 +68,8 @@ namespace QuanLySinhVien
                         AccountDAO.Instance.deleteAccount(txbUsername.Text);
 
                         refreshAccountList();
+
+                        getTotal();
                     }
                 }
             }

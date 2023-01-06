@@ -49,6 +49,18 @@ namespace QuanLySinhVien
             this.Close();
         }
 
+        private void getTotal()
+        {
+            int totalStudent = 0;
+
+            foreach (ListViewItem item in listviewStudent.Items)
+            {
+                totalStudent++;
+            }
+            label8.Text = "Tổng số sinh viên: ";
+            label8.Text += totalStudent;
+        }
+
         private void fView_Load(object sender, EventArgs e)
         {
             if (fLogin.isAdmin == false)
@@ -66,14 +78,7 @@ namespace QuanLySinhVien
             StudentDAO.Instance.LoadStudentList(listviewStudent);
             lblUsername.Text += " " + fLogin.loginName;
 
-            int totalStudent = 0;
-
-            foreach (ListViewItem item in listviewStudent.Items)
-            {
-                totalStudent++;
-            }
-
-            label8.Text += totalStudent;
+            getTotal();
 
             DataTable majorList = Major_Class_DAO.Instance.loadMajorList();
 
@@ -134,6 +139,8 @@ namespace QuanLySinhVien
                         StudentDAO.Instance.deleteStudent(Mssvtxt.Text);
 
                         refreshStudentList();
+
+                        getTotal();
                     }
                 }
             }
