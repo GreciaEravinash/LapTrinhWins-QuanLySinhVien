@@ -166,6 +166,7 @@ namespace QuanLySinhVien
             f.ShowDialog();
             this.Show();
             refreshAccountList();
+            getTotal();
         }
 
         private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)

@@ -235,6 +235,7 @@ namespace QuanLySinhVien
             this.Show();
 
             refreshStudentList();
+            getTotal();
         }
 
         private void RefreshBtn_Click(object sender, EventArgs e)
